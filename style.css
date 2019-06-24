@@ -11,6 +11,7 @@ body * {
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
+  color: black;
 }
 
 h1 {
@@ -97,7 +98,7 @@ input:checked + .slider:before {
 /* Nav */
 
 button {
-  line-height: 40px;
+  line-height: 36px;
   background-color: black;
   color: white;
   padding: 0px 18px;
@@ -109,7 +110,7 @@ button {
   font-size: 14px;
 }
 
-button.active {
+button.active, button:active {
   background-color: purple;
   outline: none;
 }
@@ -128,7 +129,7 @@ button:hover, button:focus {
   margin-top: 40px;
 }
 
-/* MEDIA HEIGHT QUERY */
+/* Media query center text vertical */
 @media (min-height: 600px) and (min-width: 600px) {
   .container.vertical-center-container {
     margin-top: 0px;
@@ -142,6 +143,44 @@ button:hover, button:focus {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+}
+
+
+/* Footer */
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+footer i {
+  margin-right: 8px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0px 8px;
+}
+
+ul {
+  list-style: none;
+}
+
+a, span {
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+i {
+  font-family: 'Fontawesome';
+  font-style: normal;
+}
+
+a:hover, a:focus {
+  font-size: 18px;
+  outline: none;
 }
 
 

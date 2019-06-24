@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Alexandra Brinn Campbell Web Developement</title>
-  <link rel="stylesheet" href="style.css">
   <meta name="description" content="Work by Alexandra Brinn Campbell - AKA Ali. JavaScript and full-stack web developer. I design and script digital experiences for people.">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -15,26 +17,35 @@
     <p role="logo" id="logo">Alexandra Brinn Campbell</p>
   </header>
   <nav role="navigation" aria-label="main navigation">
-    <button id="about-button" class="active" href="">About</button>
-    <button id="projects-button" href="">Projects</button>
-    <button id="contact-button" href="">Contact</button>
+    <button id="aboutButton" class="active" href="">About</button>
+    <button id="projectsButton" href="">Projects</button>
+    <button id="contactButton" href="">Contact</button>
   </nav>
   <main>
-    <section class="container vertical-center-container">
+    <section id="aboutSection" class="container vertical-center-container">
       <div class="vertical-center-content">
-          <h1>Hi, I'm Alexandra Brinn Campbell - AKA Ali, and I love designing and scripting digital experiences for people.</h1>
+          <h1>Hi, I'm Alexandra - AKA Ali, and I love designing and scripting digital experiences for people.</h1>
           <p>
             As a full-stack developer coming from a background in industrial design, I enjoy all aspects of web development
             from beginning-to-end. This includes user-flow illustration, HTML/CSS wireframing, database planning,
             and implementation of server-side languages like JavaScript, Ruby & SQL. Most of all, I enjoy learning
             and experimenting with new software and languages which allow me to express, implement, and test creative concepts.
-
+          </p>
+          <p>
             And when I'm not traveling, prototyping personal projects, or blasting my favorite LPs,
             you can find me drinking liters of black coffee, pursuing more in-depth knowledge on JavaScript,
-            React, and Node within Thinkful's full-stack program. Feel free to get in touch!
+            React, and Node within Thinkful's full-stack program. Feel free to get in touch.
           </p>
       </div>
     </section>
+    <footer>
+      <ul role="menu" aria-label="external links menu">
+        <li><a id="linkEmail" href="mailto:alexandrabrinncampbell@gmail.com" target="_blank">Email me</a></li>
+        <li><a id="linkGithub" href="https://github.com/killeraliens" target="_blank"><i class="fab fa-github"></i>killeraliens</a></li>
+        <li><a id="linkLinkedIn" href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank"><i class="fab fa-linkedin"></i>Alexandra Campbell</a></li>
+        <li><span id="location">USA & Abroad</span></li>
+      </ul>
+    </footer>
   </main>
 </body>
 </html>
