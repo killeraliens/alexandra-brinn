@@ -121,10 +121,6 @@ button:hover, button:focus {
 
 /* Main */
 
-/* main {
-  margin-top: 40px;
-} */
-
 .container {
   max-width: 600px;
   margin-left: auto;
@@ -132,41 +128,44 @@ button:hover, button:focus {
   margin-top: 40px;
 }
 
-/* @mixin for-phone-only { */
-  @media (max-width: 599px) {
+/* MEDIA HEIGHT QUERY */
+@media (min-height: 600px) and (min-width: 600px) {
+  .container.vertical-center-container {
+    margin-top: 0px;
+    height: 70vh;
+    position: relative;
+  }
+  .vertical-center-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
 
+
+
+/* MEDIA WIDTH QUERY STANDARDS */
+/*
+@mixin for-phone-only { */
+  @media (max-width: 599px) {
   }
   /* }
-  @mixin for-tablet-portrait-up { */
+@mixin for-tablet-portrait-up { */
     @media (min-width: 600px) {
-
     }
     /* }
-    @mixin for-tablet-landscape-up { */
-      @media (min-width: 900px) {
-        .container.vertical-center-container {
-          margin-top: 0px;
-          height: 70vh;
-          position: relative;
-        }
-        .vertical-center-content {
-          margin: 0;
-          position: absolute;
-          top: 50%;
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-        }
-      }
+@mixin for-tablet-landscape-up { */
+  @media (min-width: 900px) {
+
+  }
 /* }
 @mixin for-desktop-up { */
   @media (min-width: 1200px) {
-
   }
 /* }
 @mixin for-big-desktop-up { */
   @media (min-width: 1800px) {
-
   }
 /* } */
-
-
