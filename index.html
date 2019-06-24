@@ -9,15 +9,32 @@
 <body>
   <header>
     <label class="switch" for="color-theme">
-      <input type="checkbox" name="color theme" id="color-theme" value="day" >
+      <input type="checkbox" name="color theme" id="color-theme" aria-checked="false" >
       <span class="slider round"></span>
     </label>
     <p role="logo" id="logo">Alexandra Brinn Campbell</p>
   </header>
   <nav role="navigation" aria-label="main navigation">
-    <button id="about" href="">About</button>
-    <button id="projects" href="">Projects</button>
-    <button id="contact" href="">Contact</button>
+    <button id="about-button" class="active" href="">About</button>
+    <button id="projects-button" href="">Projects</button>
+    <button id="contact-button" href="">Contact</button>
   </nav>
+  <main>
+    <section class="container vertical-center-container">
+      <div class="vertical-center-content">
+          <h1>Hi, I'm Alexandra Brinn Campbell - AKA Ali, and I love designing and scripting digital experiences for people.</h1>
+          <p>
+            As a full-stack developer coming from a background in industrial design, I enjoy all aspects of web development
+            from beginning-to-end. This includes user-flow illustration, HTML/CSS wireframing, database planning,
+            and implementation of server-side languages like JavaScript, Ruby & SQL. Most of all, I enjoy learning
+            and experimenting with new software and languages which allow me to express, implement, and test creative concepts.
+
+            And when I'm not traveling, prototyping personal projects, or blasting my favorite LPs,
+            you can find me drinking liters of black coffee, pursuing more in-depth knowledge on JavaScript,
+            React, and Node within Thinkful's full-stack program. Feel free to get in touch!
+          </p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
