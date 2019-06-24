@@ -17,12 +17,20 @@ h1 {
   font-size: 18px;
 }
 
+header, nav {
+  margin: 20px 20px 0px 20px;
+}
+
 /* Header */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#logo {
+  font-weight: bold;
 }
 
 .switch {
