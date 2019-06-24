@@ -6,6 +6,19 @@ body {
   margin: 0px;
 }
 
+body * {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -49,6 +62,10 @@ header {
   transition: .4s;
 }
 
+.slider:hover {
+  opacity: .8;
+}
+
 input:checked + .slider {
   background-color: darkgray;
 }
@@ -65,4 +82,27 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Nav */
+
+button {
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  padding: 0px 18px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+   -webkit-transition: .4s;
+  transition: .4s;
+}
+
+button:focus {
+  background-color: purple;
+  outline: none;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
