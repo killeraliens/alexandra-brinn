@@ -4,12 +4,13 @@ body {
   font-family: 'Heebo', 'Arial';
   font-weight: 400;
   margin: 0px;
+
 }
 
 body * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-size: 16px;
   color: black;
 }
@@ -18,7 +19,7 @@ h1 {
   font-size: 16px;
 }
 
-header, nav, main {
+header, nav, main, footer {
   margin: 20px 20px 0px 20px;
 }
 
@@ -121,12 +122,14 @@ button:hover, button:focus {
 }
 
 /* Main */
+main {
+  margin-top: 40px;
+}
 
 .container {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
 }
 
 /* Media query center text vertical */
@@ -149,7 +152,6 @@ button:hover, button:focus {
 /* Footer */
 
 footer {
-  width: 100%;
   text-align: center;
 }
 
@@ -164,6 +166,7 @@ footer ul li {
 
 ul {
   list-style: none;
+  width: 100%;
 }
 
 a, span {
