@@ -23,6 +23,12 @@ header, nav, main, footer {
   margin: 20px 20px 0px 20px;
 }
 
+i {
+  font-family: 'Fontawesome';
+  font-style: normal;
+  margin-right: 8px;
+}
+
 
 /* Header */
 
@@ -190,9 +196,23 @@ img.desktop {
 }
 
 @media (max-width: 600px) {
+  main {
+    margin-top: 20px;
+  }
 
   .project-image-wrap {
     height: 280px;
+  }
+
+  .project-image-wrap img {
+  box-shadow: 0 0 5px lightgray;
+}
+
+}
+@media (max-width: 400px) {
+
+  .project-image-wrap {
+    height: 200px;
   }
 
 }
@@ -203,10 +223,6 @@ img.desktop {
 
 footer {
   text-align: center;
-}
-
-footer i {
-  margin-right: 8px;
 }
 
 footer ul li {
@@ -224,11 +240,6 @@ a, span {
   font-weight: bold;
   -webkit-transition: .4s;
   transition: .4s;
-}
-
-i {
-  font-family: 'Fontawesome';
-  font-style: normal;
 }
 
 a:hover, a:focus {
