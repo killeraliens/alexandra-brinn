@@ -194,6 +194,10 @@ img.desktop {
   img.desktop {
     max-width: 300px;
   }
+
+  .d1 {
+  left: 30px;
+   }
 }
 
 
