@@ -121,6 +121,12 @@ button:hover, button:focus {
   outline: none;
 }
 
+@media (max-width: 600px) {
+  button {
+    margin-bottom: 12px;
+  }
+}
+
 
 /* Main */
 main {
@@ -135,6 +141,7 @@ main {
 
 /* Main Media query center text vertical */
 @media (min-height: 600px) and (min-width: 600px) {
+
   .container.vertical-center-container {
     height: 70vh;
     position: relative;
@@ -150,12 +157,12 @@ main {
 
 /* Main images */
 
-.project-image-array {
+.project-image-wrap {
   position: relative;
   height: 380px;
 }
 
-.project-image-array img {
+.project-image-wrap img {
   position: absolute;
   box-shadow: 0 0 10px lightgray;
 }
@@ -183,8 +190,9 @@ img.desktop {
 }
 
 @media (max-width: 600px) {
-  .project-image-array {
-    height: 280px;
+
+  .project-image-wrap {
+    height: 300px;
   }
 
   img.mobile {
@@ -192,7 +200,7 @@ img.desktop {
   }
 
   img.desktop {
-    max-width: 300px;
+    max-width: 250px;
   }
 
   .d1 {
