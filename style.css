@@ -121,6 +121,7 @@ button:hover, button:focus {
   outline: none;
 }
 
+
 /* Main */
 main {
   margin-top: 40px;
@@ -132,10 +133,9 @@ main {
   margin-right: auto;
 }
 
-/* Media query center text vertical */
+/* Main Media query center text vertical */
 @media (min-height: 600px) and (min-width: 600px) {
   .container.vertical-center-container {
-    margin-top: 0px;
     height: 70vh;
     position: relative;
   }
@@ -146,6 +146,43 @@ main {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+}
+
+/* Main images */
+
+.project-image-array {
+  position: relative;
+  height: 360px;
+}
+
+.project-image-array img {
+  position: absolute;
+  box-shadow: 0 0 10px lightgray;
+}
+
+img.mobile {
+  max-width: 150px;
+}
+
+img.desktop {
+  max-width: 420px;
+  z-index: -1;
+}
+
+.m2 {
+  right: 0px;
+  left: auto;
+  bottom: 0px;
+}
+
+.m1 {
+  bottom: 20px;
+  left: auto;
+  right: auto;
+}
+
+.d1 {
+  left: 120px;
 }
 
 

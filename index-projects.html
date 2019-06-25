@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Alexandra Brinn Campbell Web Developement</title>
+  <meta name="description"
+    content="Work by Alexandra Brinn Campbell - AKA Ali. JavaScript and full-stack web developer. I design and script digital experiences for people.">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <label class="switch" for="color-theme">
+      <input type="checkbox" name="color theme" id="color-theme" aria-checked="false">
+      <span class="slider round"></span>
+    </label>
+    <p role="logo" id="logo">Alexandra Brinn Campbell</p>
+  </header>
+  <nav role="navigation" aria-label="main navigation">
+    <a href="./index.html">
+      <button id="aboutButton" class="active">About</button>
+    </a>
+    <a href="./index-projects.html">
+      <button id="projectsButton">Projects</button>
+    </a>
+    <a href="./index-contact">
+      <button id="contactButton">Contact</button>
+    </a>
+  </nav>
+  <main>
+    <section id="projectsSection" class="container">
+      <!-- <div class="vertical-center-content"> -->
+      <div class="project-container">
+        <div class="project-image-array">
+          <img class="mobile m1" src="./assets/flesh-me/mobile-1.png" alt="flesh me mobile screenshot">
+          <img class="mobile m2" src="./assets/flesh-me/mobile-2.png" alt="flesh me mobile screenshot">
+          <img class="desktop d1" src="./assets/flesh-me/desktop-1.png" alt="flesh me desktop screenshot">
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+  </main>
+  <footer>
+    <ul role="menu" aria-label="external links menu">
+      <li><a id="linkEmail" href="mailto:alexandrabrinncampbell@gmail.com" target="_blank">Email me</a></li>
+      <li><a id="linkGithub" href="https://github.com/killeraliens" target="_blank"><i class="fab fa-github"></i>killeraliens</a></li>
+      <li><a id="linkLinkedIn" href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank"><i class="fab fa-linkedin"></i>Alexandra Campbell</a></li>
+      <li><span id="location">USA & Abroad</span></li>
+    </ul>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
