@@ -10,7 +10,7 @@ body {
 body * {
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-size: 16px;
   color: black;
 }
@@ -218,8 +218,8 @@ img.desktop {
   }
 
   .project-image-wrap img {
-  box-shadow: 0 0 5px rgba(0,0,0,.2);
-}
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+  }
 
 }
 @media (max-width: 400px) {
@@ -242,17 +242,22 @@ img.desktop {
 
 }
 
-.contact-form fieldset {
+.contact-form fieldset, .contact-form input, .contact-form textarea {
   border: none;
 }
 .contact-form label {
   display: block;
 }
 
-.contact-form input {
+.contact-form input, .contact-form textarea  {
   line-height: 30px;
-  padding-left: 8px;
-  border: none;
+  padding: 0px 8px;
+  width: 100%;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 @media (min-height: 600px) and (min-width: 600px) {
