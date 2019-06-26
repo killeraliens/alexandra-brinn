@@ -138,14 +138,13 @@ button {
 body.night button {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
-
+  box-sizing: border-box;
 }
 
 body.night button.active, body.night button:active {
   background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
   color: black;
 }
-
 
 button.active, button:active {
   background-color: purple;
