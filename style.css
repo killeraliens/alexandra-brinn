@@ -115,6 +115,7 @@ button {
    -webkit-transition: .4s;
   transition: .4s;
   font-size: 14px;
+  cursor: pointer;
 }
 
 button.active, button:active {
@@ -136,10 +137,10 @@ button:hover, button:focus {
 
 /* Main */
 main {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
-.container {
+section.container {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -148,11 +149,11 @@ main {
 /* Main Media query center text vertical */
 @media (min-height: 600px) and (min-width: 600px) {
 
-  .container.vertical-center-container {
+  section.container.vertical-center-container {
     height: 70vh;
     position: relative;
   }
-  .vertical-center-content {
+  section.vertical-center-content {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -161,11 +162,16 @@ main {
   }
 }
 
+article.project-container {
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+
 /* Main images */
 
 .project-image-wrap {
   position: relative;
-  height: 380px;
+  height: 400px;
 }
 
 .project-image-wrap img {
@@ -174,7 +180,7 @@ main {
 }
 
 img.mobile {
-  width: 25%;
+  width: 22%;
 }
 
 img.desktop {
@@ -183,6 +189,11 @@ img.desktop {
 }
 
 .m2 {
+  left: 30%;
+  bottom: 0;
+}
+
+.m3 {
   right: 0px;
   bottom: 0px;
 }
@@ -195,13 +206,17 @@ img.desktop {
   left: 20%;
 }
 
+.d2 {
+  left: 35%;
+}
+
 @media (max-width: 600px) {
   main {
     margin-top: 20px;
   }
 
   .project-image-wrap {
-    height: 280px;
+    height: 300px;
   }
 
   .project-image-wrap img {
