@@ -169,7 +169,7 @@ button:hover, button:focus {
 .project-image-wrap {
   position: relative;
   height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .project-image-wrap img {
@@ -230,6 +230,39 @@ img.desktop {
 
 }
 
+
+/* Contact */
+
+
+.contact-form {
+  text-align: left;
+  display: block;
+  background-color: lightgrey;
+  padding: 20px 20px 40px 20px;
+
+}
+
+.contact-form fieldset {
+  border: none;
+}
+.contact-form label {
+  display: block;
+}
+
+.contact-form input {
+  line-height: 30px;
+  padding-left: 8px;
+  border: none;
+}
+
+@media (min-height: 600px) and (min-width: 600px) {
+  .form-wrap {
+    margin-left: 0%;
+    margin-right:0%;
+    width: 100%;
+  }
+
+}
 
 
 /* Footer */

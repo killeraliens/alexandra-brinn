@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alexandra Brinn Campbell Web Developement</title>
+  <meta name="description"
+    content="Work by Alexandra Brinn Campbell - AKA Ali. JavaScript and full-stack web developer. I design and script digital experiences for people.">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <label class="switch" for="color-theme">
+      <input type="checkbox" name="color theme" id="color-theme" aria-checked="false">
+      <span class="slider round"></span>
+    </label>
+    <p role="logo" id="logo">Alexandra Brinn Campbell</p>
+  </header>
+  <nav role="navigation" aria-label="main navigation">
+    <a href="./index.html">
+      <button id="aboutButton" class="active">About</button>
+    </a>
+    <a href="./index-projects.html">
+      <button id="projectsButton">Projects</button>
+    </a>
+    <a href="./index-contact.html">
+      <button id="contactButton">Contact</button>
+    </a>
+  </nav>
+  <main>
+    <section id="contactSection" class="container vertical-center-container">
+      <div class="vertical-center-content form-wrap">
+
+          <form class="contact-form" action="mailto:alexandrabrinncampbell@gmail.com" method="post" enctype="text/plain">
+            <h1>Get In Touch</h1>
+            <fieldset name="contact-info">
+              <label for="name" required>Name</label>
+              <input id="name" name="name" type="text" placeholder="Your Name" required>
+              <label for="email" required>Email</label>
+              <input id="email" name="email" type="email" placeholder="Your Email" required>
+            </fieldset>
+            <fieldset name="message-content">
+              <label for="message" required>Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+          </form>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul role="menu" aria-label="external links menu">
+      <li><a href="mailto:alexandrabrinncampbell@gmail.com" target="_blank" aria-label="link to email popup">Email
+          me</a></li>
+      <li><a href="https://github.com/killeraliens" target="_blank" aria-label="link to my github profile"><i
+            class="fab fa-github"></i>killeraliens</a></li>
+      <li><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank"
+          aria-label="link to my linkedin profile"><i class="fab fa-linkedin"></i>Alexandra Campbell</a></li>
+      <li><span id="location">USA & Abroad</span></li>
+    </ul>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
