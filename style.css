@@ -15,8 +15,21 @@ body * {
   color: black;
 }
 
+body.night {
+  background-color: black;
+}
+
+body.night * {
+  color: white;
+
+}
+
 h1 {
   font-size: 16px;
+}
+
+p {
+  margin: 10px 0px;
 }
 
 header, nav, main, footer {
@@ -83,14 +96,15 @@ header {
   opacity: .8;
 } */
 
-input:checked + .slider {
-  background-color: darkgray;
+body.night input:checked + .slider {
+  background-color: white;
 }
 
-input:checked + .slider:before {
+body.night input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background-color: black;
 }
 
 .slider.round {
@@ -116,6 +130,11 @@ button {
   transition: .4s;
   font-size: 14px;
   cursor: pointer;
+}
+
+body.night button {
+  background-color: none;
+  border: 1px solid white;
 }
 
 button.active, button:active {
@@ -255,6 +274,7 @@ img.desktop {
   padding: 0px 8px;
   width: 100%;
   margin-bottom: 10px;
+  border-radius:3px;
 }
 
 .contact-form h1 {
@@ -280,6 +300,7 @@ img.desktop {
 
 footer {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 footer ul li {
