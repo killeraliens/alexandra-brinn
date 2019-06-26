@@ -21,6 +21,9 @@ body.night {
 
 body.night * {
   color: white;
+}
+
+body.button {
 
 }
 
@@ -96,11 +99,11 @@ header {
   opacity: .8;
 } */
 
-body.night input:checked + .slider {
+input:checked + .slider {
   background-color: white;
 }
 
-body.night input:checked + .slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -135,11 +138,19 @@ button {
 body.night button {
   background-color: none;
   border: 1px solid white;
+
 }
+
+body.night button.active, body.night button:active {
+  background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
+  color: black;
+}
+
 
 button.active, button:active {
   background-color: purple;
   outline: none;
+
 }
 
 button:hover, button:focus {
