@@ -36,7 +36,7 @@
     <section id="contactSection" class="container vertical-center-container">
       <div class="vertical-center-content form-wrap">
 
-          <form class="contact-form" action="mailto:alexandrabrinncampbell@gmail.com" method="post" enctype="text/plain">
+          <form id="js-contact-form" class="contact-form" action="" method="post" enctype="text/plain">
             <h1>Get In Touch</h1>
             <fieldset name="contact-info">
               <label for="name" required>Name</label>
@@ -45,10 +45,12 @@
               <input id="email" name="email" type="email" placeholder="Your Email" required>
             </fieldset>
             <fieldset name="message-content">
+<!--              <label for="subject" required>Subject</label>-->
+<!--              <input id="subject" name="subject" type="text" placeholder="Subject">-->
               <label for="message" required>Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
             </fieldset>
-            <button type="submit">Send</button>
+            <button id="js-submit-email-button" type="submit">Send</button>
           </form>
 
       </div>
