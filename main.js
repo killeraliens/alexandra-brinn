@@ -1,9 +1,33 @@
+// function AlexandraBrinnState()
+
+function Project(title, siteUrl, imgUrlArr, paragraphArr, ghUrl) {
+    this.title = title;
+    this.siteUrl = siteUrl;
+    this.imgUrlArr = imgUrlArr;
+    this.paragraphArr = paragraphArr;
+    this.ghUrl = ghUrl;
+
+}
+
+function generateProjectArr() {
+    const projectArr = [];
+
+    const cryptidsQuiz = new Project(
+        "Cryptids Quiz",
+        "https://killeraliens.github.io/quiz",
+        ["Take my quiz on folklore creatures! A JQuery, HTML, CSS interactive app, with a focus on responsive design."],
+        ["./assets/cryptids-quiz/mobile-1.png", "./assets/cryptids-quiz/mobile-2.png", "./assets/cryptids-quiz/desktop-1.png", "./assets/cryptids-quiz/mobile-3.png"],
+        "https://killeraliens.github.io/quiz"
+    );
+    projectArr.push(cryptidsQuiz);
+    return projectArr;
+}
 
 function Email(name, email, message) {
     this.senderName = name;
     this.senderEmail = email;
     this.message = message;
-    this.subject = `Someone sent you a message killeraliens!!!`;
+    this.subject = `${this.senderName} sent you a message from your site`;
     this.recipient = `alexandrabrinncampbell@gmail.com`;
     this.recipientName = `Alexandra Campbell`;
 }
@@ -50,9 +74,6 @@ function handleEmailFormSubmit() {
     })
 }
 
-
-
-
 function handleThemeSwitch() {
     $("#js-color-theme-switch").on('click', function(e) {
         $("body").toggleClass('night');
@@ -61,8 +82,6 @@ function handleThemeSwitch() {
         switchInput.prop("aria-checked", !switchInput.prop("aria-checked"));
     });
 }
-
-
 
 
 function handleInputs() {
