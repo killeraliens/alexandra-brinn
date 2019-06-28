@@ -18,18 +18,18 @@
     </label>
     <p id="logo">Alexandra Brinn Campbell</p>
   </header>
-  <nav role="navigation" aria-label="main navigation">
+  <nav id="js-main-nav" role="navigation" aria-label="main navigation">
     <a href="./index.html">
       <button id="js-about-button" class="active" >About</button>
     </a>
     <a href="./index-projects.html">
       <button id="js-projects-button" >Projects</button>
     </a>
-    <a href="./index-contact.html">
-      <button id="js-contact-button">Contact</button>
-    </a>
+<!--    <a href="./index-contact.html">-->
+    <button id="js-contact-button">Contact</button>
+<!--    </a>-->
   </nav>
-  <main class="js-main-display">
+  <main id="js-main-display">
     <section id="aboutSection" class="container vertical-center-container">
       <div class="vertical-center-content">
           <h1>Hi, I'm Alexandra - AKA Ali, and I love designing and scripting digital experiences for people.</h1>
@@ -55,8 +55,11 @@
           <li><span id="location">USA & Abroad</span></li>
         </ul>
       </footer>
-      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-      <script src="./main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+  <script src="./components/about.js"></script>
+  <script src="./components/projects.js"></script>
+  <script src="./components/contact.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
