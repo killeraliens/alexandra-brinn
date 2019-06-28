@@ -33,6 +33,13 @@ function handleThemeSwitch() {
     });
 }
 
+function handleAboutButton() {
+    $("#js-about-button").on('click', function(e) {
+        renderAboutSection();
+        handleClickedNavButton($(e.currentTarget));
+    });
+}
+
 function handleContactButton() {
     $("#js-contact-button").on('click', function(e) {
         renderContactSection();
@@ -53,6 +60,7 @@ function handleClickedNavButton(currentTarget) {
 function handleInputs() {
     handleThemeSwitch();
     handleContactButton();
+    handleAboutButton();
 }
 
 handleInputs();
