@@ -23,8 +23,12 @@ body.night * {
   color: white;
 }
 
-body.button {
+body.night form * {
+  color: black;
+}
 
+body.night form button {
+  border: 1px solid black;
 }
 
 h1 {
@@ -148,6 +152,8 @@ body.night button {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
   box-sizing: border-box;
+  line-height: 34px;
+  padding: 0px 16px;
 }
 
 body.night button.active, body.night button:active {
@@ -278,6 +284,11 @@ img.desktop {
   background-color: lightgrey;
   padding: 20px;
 
+}
+
+body.night .contact-form {
+  color: black;
+  border-color: black;
 }
 
 .contact-form fieldset, .contact-form input, .contact-form textarea {
