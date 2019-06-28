@@ -14,6 +14,14 @@ function handleAboutButton() {
     });
 }
 
+function handleProjectsButton() {
+    const projects = generateProjectArr();
+    $('#js-projects-button').on('click', function(e) {
+        renderProjectsSection();
+        handleClickedNavButton($(e.currentTarget));
+    });
+}
+
 function handleContactButton() {
     $("#js-contact-button").on('click', function(e) {
         renderContactSection();
@@ -35,6 +43,7 @@ function handleInputs() {
     handleThemeSwitch();
     handleContactButton();
     handleAboutButton();
+    handleProjectsButton();
 }
 
 handleInputs();

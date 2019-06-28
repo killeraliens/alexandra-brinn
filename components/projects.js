@@ -22,13 +22,35 @@ function generateProjectArr() {
         "Flesh Me",
         "https://killeraliens.github.io/flesh-me",
         ["This weekend project showcases my love of bad Photoshop art while learning the basics of semantic, accessible HTML, as\n" +
-        "well as vanilla JS and JQuery transitions. Select and layer the flesh items from the lefthand pallette. I can also do clean Photoshop work."],
+        "          well as vanilla JS and JQuery transitions. Select and layer the flesh items from the lefthand pallette. I can also do clean Photoshop work."],
         ["./assets/flesh-me/mobile-1.png", "./assets/flesh-me/mobile-2.png", "./assets/flesh-me/desktop-1.png"],
         "https://github.com/killeraliens/flesh-me"
     );
 
-    const
+    const excuseEngine = new Project(
+        "Excuse Engine",
+        "http://www.excuse-engine.com/",
+        ["An app that generates excuses for you based on your location.\n" +
+        "          Built with Ruby on Rails, JavaScript, traffic & London transport APIs, HTML, and CSS - teamwork - Janie, Maddie,\n" +
+        "          Mark -\n" +
+        "          Github/Heroku."],
+        "https://github.com/maddielewis/excuse-engine"
+    );
 
-    projectArr.push(cryptidsQuiz, fleshMe);
+    projectArr.push(cryptidsQuiz, fleshMe, excuseEngine);
     return projectArr;
+}
+
+
+function returnProjectsSectionHtml() {
+    console.log('return html container with map function for listing')
+    return `<h1>PROJECTS SECTION</h1>`;
+}
+
+function injectProjectsSectionHtml() {
+    $("#js-main-display").html(returnProjectsSectionHtml());
+}
+
+function renderProjectsSection() {
+    injectProjectsSectionHtml();
 }
