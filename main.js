@@ -1,29 +1,3 @@
-// function AlexandraBrinnState()
-
-function Project(title, siteUrl, imgUrlArr, paragraphArr, ghUrl) {
-    this.title = title;
-    this.siteUrl = siteUrl;
-    this.imgUrlArr = imgUrlArr;
-    this.paragraphArr = paragraphArr;
-    this.ghUrl = ghUrl;
-
-}
-
-function generateProjectArr() {
-    const projectArr = [];
-
-    const cryptidsQuiz = new Project(
-        "Cryptids Quiz",
-        "https://killeraliens.github.io/quiz",
-        ["Take my quiz on folklore creatures! A JQuery, HTML, CSS interactive app, with a focus on responsive design."],
-        ["./assets/cryptids-quiz/mobile-1.png", "./assets/cryptids-quiz/mobile-2.png", "./assets/cryptids-quiz/desktop-1.png", "./assets/cryptids-quiz/mobile-3.png"],
-        "https://killeraliens.github.io/quiz"
-    );
-    projectArr.push(cryptidsQuiz);
-    return projectArr;
-}
-
-
 function handleThemeSwitch() {
     $("#js-color-theme-switch").on('click', function(e) {
         $("body").toggleClass('night');
