@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d44a2dfd-343b-45a9-9fa8-563fd9f5c73f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/components/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/about.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -55,20 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
+            <state relative-caret-position="338">
+              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/about.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="165">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -96,8 +95,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/components/contact.js" />
-        <option value="$PROJECT_DIR$/components/projects.js" />
         <option value="$PROJECT_DIR$/components/about.js" />
+        <option value="$PROJECT_DIR$/components/projects.js" />
       </list>
     </option>
   </component>
@@ -180,12 +179,12 @@
       <updated>1561569162462</updated>
       <workItem from="1561569165364" duration="6831000" />
       <workItem from="1561591193760" duration="1261000" />
-      <workItem from="1561602602435" duration="42143000" />
+      <workItem from="1561602602435" duration="42652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50235000" />
+    <option name="totallyTimeSpent" value="50744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="122" y="160" width="1343" height="877" extended-state="0" />
@@ -263,17 +262,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/projects.js">
+    <entry file="file://$PROJECT_DIR$/components/about.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
+        <state relative-caret-position="165">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/about.js">
+    <entry file="file://$PROJECT_DIR$/components/projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="338">
+          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
         </state>
       </provider>
     </entry>

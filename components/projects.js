@@ -67,11 +67,14 @@ function returnArticleString(project) {
         </div>
         <h1>${project.title}</h1>
         <a href="${project.siteUrl}" target="_blank" aria-label="link to the ${project.title} site">${regexedSiteUrl(project.siteUrl)}</a>
-        <p>
-          ${project.paragraphArr}
-        </p>
+        ${returnParagraphsString(project)}  
         <a href="${project.ghUrl}" target="_blank" aria-label="link to the github repo"><i class="fab fa-github"></i>See the code</a>
       </article>`;
+}
+
+function returnParagraphsString(project) {
+    const pArray = project.paragraphArr.map(p => {return `<p>${p}</p>`});
+    return pArray.join('\n');
 }
 
 function returnImagesString(project) {
