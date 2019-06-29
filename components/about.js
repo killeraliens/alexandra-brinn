@@ -24,6 +24,5 @@ function injectAboutSectionHtml() {
 }
 
 function renderAboutSection() {
-    console.log("hellofromaboutpage");
     injectAboutSectionHtml();
 }
