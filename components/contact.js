@@ -68,14 +68,6 @@ function returnContactSectionHtml() {
             <input type="hidden" name="_next" value="https://killeraliens.github.io/alexandra-brinn/index.html" />
             <button id="js-submit-email-button" type="submit" >Send</button>
           </form>
-<!--        <form action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST">-->
-<!--            <input type="text" name="name">-->
-<!--            <input type="email" name="_replyto">-->
-<!--            <textarea type="text" name="description" id="message" rows="4" cols="10"></textarea>-->
-<!--            -->
-<!--            <input type="text" name="_gotcha" style="display:none" />-->
-<!--            <input type="submit" value="Send">-->
-<!--        </form>-->
       </div>
     </section>
   `;
