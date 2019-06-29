@@ -79,5 +79,5 @@ function injectContactSectionHtml() {
 
 function renderContactSection() {
     injectContactSectionHtml();
-    handleEmailFormSubmit();
+    // handleEmailFormSubmit();
 }
