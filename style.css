@@ -244,6 +244,12 @@ img.desktop {
   bottom: 10%;
 }
 
+.d0 {
+  left: 10%;
+  /*z-index: 2;*/
+  bottom: 0px;
+}
+
 .d1 {
   left: 20%;
 }

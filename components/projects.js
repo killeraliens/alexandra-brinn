@@ -37,7 +37,18 @@ function generateProjectArr() {
         "https://github.com/maddielewis/excuse-engine"
     );
 
-    projectArr.push(cryptidsQuiz, fleshMe, excuseEngine);
+    const goatsGuide = new Project(
+        "Goats Guide",
+        `https://github.com/killeraliens/goats-guide`,
+        ["A web tool and database concept developed from the needs of fans and practicing artists of extreme metal music genres. \n" +
+        "Goat’s Guide is focused on helping bands and fans form local & international connections for live events, as well as event & venue discovery. \n" +
+        "This is a project I am currently reworking and preparing to implement using React and Node. The current version was built using Ruby on Rails\n" +
+        "and utilizes HTML-scraping gems such as Watir and Nokogiri (among many others). Deployed with Heroku."],
+        [["./assets/goats-guide/mobile-1.png", "m1"], ["./assets/goats-guide/mobile-2.png", "m3"],  ["./assets/goats-guide/desktop-2.png", "d0"], ["./assets/goats-guide/desktop-1.png", "d2"]], //["./assets/goats-guide/mobile-3.png", "m2"],
+        "https://github.com/killeraliens/goats-guide"
+    );
+
+    projectArr.push(cryptidsQuiz, fleshMe, excuseEngine, goatsGuide);
     return projectArr;
 }
 
