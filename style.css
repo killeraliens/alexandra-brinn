@@ -193,6 +193,10 @@ button:hover, button:focus {
   button {
     margin-bottom: 12px;
   }
+
+  button:hover, button:focus {
+    transform: none;
+  }
 }
 
 
