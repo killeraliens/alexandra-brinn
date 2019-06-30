@@ -307,7 +307,6 @@ body.night form button {
 
 body.night .contact-form input, body.night .contact-form textarea, .contact-form select {
   background-color: rgb(245, 245, 245);
-
 }
 
 
@@ -348,7 +347,7 @@ select, option {
 
 
 body.night .contact-form select {
-  background-color: none;
+  color: rgb(20, 20, 20);
 
 }
 
