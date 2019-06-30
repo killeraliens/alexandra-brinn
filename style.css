@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,900');
+@import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia&display=swap');
 
 body {
   font-family: 'Heebo', 'Arial';
@@ -37,6 +38,12 @@ header, nav, main, footer {
   margin: 20px 20px 0px 20px;
 }
 
+@media (min-width: 600px) {
+  main {
+    margin-top: 40px;
+  }
+}
+
 i {
   font-family: 'Fontawesome';
   font-style: normal;
@@ -54,6 +61,12 @@ header {
 
 #logo {
   font-weight: bold;
+  /*font-size: 18px;*/
+}
+
+body.night #logo {
+  font-family: 'UnifrakturMaguntia', sans-serif;
+  font-size: 18px;
 }
 
 .switch {
@@ -185,7 +198,7 @@ button:hover, button:focus {
 @media (min-height: 600px) and (min-width: 600px) {
 
   .container.vertical-center-container {
-    height: 70vh;
+    height: calc(70vh - 40px);
     position: relative;
   }
   .vertical-center-content {
@@ -198,8 +211,8 @@ button:hover, button:focus {
 }
 
 .project-container {
-  padding-top: 20px;
-  margin-bottom: 40px;
+  /*padding-top: 20px;*/
+  margin-bottom: 60px;
 }
 
 /* Main images */
@@ -253,9 +266,6 @@ img.desktop {
 }
 
 @media (max-width: 600px) {
-  main {
-    margin-top: 20px;
-  }
 
   .project-image-wrap {
     height: 300px;
@@ -263,6 +273,11 @@ img.desktop {
 
   .project-image-wrap img {
     box-shadow: 0 0 5px rgba(0,0,0,.2);
+  }
+
+  .project-container {
+    /*padding-top: 20px;*/
+    margin-bottom: 40px;
   }
 
 }
@@ -283,7 +298,8 @@ img.desktop {
   display: block;
   background-color: lightgrey;
   padding: 20px;
-
+  /*margin-top: 10px*/
+  margin-bottom: 40px;
 }
 
 body.night .contact-form {
@@ -428,5 +444,5 @@ a:hover, a:focus {
 /* Specific Sections */
 
 #contactSection p {
-  /*margin-bottom: 10px;*/
+  margin-bottom: 20px;
 }
