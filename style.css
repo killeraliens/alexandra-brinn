@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   margin: 0px;
   transition: .4s;
+  background: rgb(245, 245, 245);
 }
 
 body * {
@@ -20,7 +21,7 @@ body.night {
 }
 
 body.night * {
-  color: white;
+  color: rgb(240, 240, 240);
 }
 
 body.night form * {
@@ -94,14 +95,14 @@ header {
   height: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: rgb(240, 240, 240);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 
 input:checked + .slider {
-  background-color: white;
+  background-color: rgb(240, 240, 240);
 }
 
 input:checked + .slider:before {
@@ -112,7 +113,7 @@ input:checked + .slider:before {
 }
 
 /*body.night .slider {*/
-/*  background-color: white;*/
+/*  background-color: rgb(230, 230, 230;*/
 /*}*/
 
 /*body.night .slider:before {*/
@@ -137,7 +138,7 @@ input:checked + .slider:before {
 button {
   line-height: 36px;
   background-color: black;
-  color: white;
+  color: rgb(240, 240, 240);
   padding: 0px 18px;
   border: none;
   border-radius: 4px;
@@ -150,7 +151,7 @@ button {
 
 body.night button {
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid white;
+  border: 1px solid rgb(240, 240, 240);
   box-sizing: border-box;
   line-height: 34px;
   padding: 0px 16px;

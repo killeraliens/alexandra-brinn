@@ -26,17 +26,6 @@ function generateProjectArr() {
         "https://github.com/killeraliens/flesh-me"
     );
 
-    const excuseEngine = new Project(
-        "Excuse Engine",
-        `http://www.excuse-engine.com/`,
-        ["An app that generates excuses for you based on your location.\n" +
-        "          Built with Ruby on Rails, JavaScript, traffic & London transport APIs, HTML, and CSS - teamwork - Janie, Maddie,\n" +
-        "          Mark -\n" +
-        "          Github/Heroku."],
-        [["./assets/excuse-engine/mobile-1.png", "m1"], ["./assets/excuse-engine/mobile-2.png", "m2"], ["./assets/excuse-engine/mobile-3.png", "m3"], ["./assets/excuse-engine/desktop-1.png", "d2"]],
-        "https://github.com/maddielewis/excuse-engine"
-    );
-
     const goatsGuide = new Project(
         "Goats Guide",
         `https://github.com/killeraliens/goats-guide`,
@@ -48,7 +37,19 @@ function generateProjectArr() {
         "https://github.com/killeraliens/goats-guide"
     );
 
-    projectArr.push(cryptidsQuiz, fleshMe, excuseEngine, goatsGuide);
+    const excuseEngine = new Project(
+        "Excuse Engine",
+        `http://www.excuse-engine.com/`,
+        ["An app that generates excuses for you based on your location.\n" +
+        "          Built with Ruby on Rails, JavaScript, traffic & London transport APIs, HTML, and CSS - teamwork - Janie, Maddie,\n" +
+        "          Mark -\n" +
+        "          Github/Heroku."],
+        [["./assets/excuse-engine/mobile-1.png", "m1"], ["./assets/excuse-engine/mobile-2.png", "m2"], ["./assets/excuse-engine/mobile-3.png", "m3"], ["./assets/excuse-engine/desktop-1.png", "d2"]],
+        "https://github.com/maddielewis/excuse-engine"
+    );
+
+
+    projectArr.push(cryptidsQuiz, fleshMe, goatsGuide, excuseEngine);
     return projectArr;
 }
 

@@ -35,11 +35,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="247" column="10" selection-start-line="247" selection-start-column="10" selection-end-line="247" selection-end-column="10" />
+            <state relative-caret-position="105">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -56,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="46" column="239" selection-start-line="46" selection-start-column="239" selection-end-line="46" selection-end-column="239" />
+            <state relative-caret-position="511">
+              <caret line="35" column="188" selection-start-line="35" selection-start-column="188" selection-end-line="35" selection-end-column="188" />
             </state>
           </provider>
         </entry>
@@ -97,8 +99,8 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/components/contact.js" />
         <option value="$PROJECT_DIR$/components/about.js" />
-        <option value="$PROJECT_DIR$/components/projects.js" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/components/projects.js" />
       </list>
     </option>
   </component>
@@ -113,8 +115,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="97" />
-    <option name="y" value="23" />
+    <option name="x" value="250" />
+    <option name="y" value="24" />
     <option name="width" value="1343" />
     <option name="height" value="877" />
   </component>
@@ -193,15 +195,15 @@
       <workItem from="1561569165364" duration="6831000" />
       <workItem from="1561591193760" duration="1261000" />
       <workItem from="1561602602435" duration="42918000" />
-      <workItem from="1561865767729" duration="2435000" />
+      <workItem from="1561865767729" duration="4371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53445000" />
+    <option name="totallyTimeSpent" value="55381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="23" width="1343" height="877" extended-state="0" />
+    <frame x="250" y="24" width="1343" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11422088" />
@@ -279,17 +281,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/projects.js">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" column="239" selection-start-line="46" selection-start-column="239" selection-end-line="46" selection-end-column="239" />
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/components/projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="247" column="10" selection-start-line="247" selection-start-column="10" selection-end-line="247" selection-end-column="10" />
+        <state relative-caret-position="511">
+          <caret line="35" column="188" selection-start-line="35" selection-start-column="188" selection-end-line="35" selection-end-column="188" />
         </state>
       </provider>
     </entry>
