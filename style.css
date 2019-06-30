@@ -66,7 +66,12 @@ header {
 
 body.night #logo {
   font-family: 'UnifrakturMaguntia', sans-serif;
-  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  body.night #logo {
+    font-size: 18px;
+  }
 }
 
 .switch {
@@ -153,6 +158,7 @@ button {
   transition: .4s;
   font-size: 14px;
   cursor: pointer;
+
 }
 
 body.night button {
@@ -171,12 +177,16 @@ body.night button.active, body.night button:active {
 button.active, button:active {
   background-color: purple;
   outline: none;
+  -webkit-appearance: none; /* WebKit/Chromium */
+  -moz-appearance: none; /* Gecko */
 
 }
 
 button:hover, button:focus {
   transform: scale(1.1);
   outline: none;
+  -webkit-appearance: none; /* WebKit/Chromium */
+  -moz-appearance: none; /* Gecko */
 }
 
 @media (max-width: 600px) {
@@ -302,11 +312,6 @@ img.desktop {
   margin-bottom: 40px;
 }
 
-body.night .contact-form {
-  /*color: black;*/
-  /*border-color: black;*/
-  /*background-color: darkgray;*/
-}
 
 body.night form * {
   color: black;
@@ -320,11 +325,6 @@ body.night form button {
 .contact-form fieldset, .contact-form input, .contact-form textarea, .contact-form select {
   border: none;
 }
-
-/*body.night .contact-form input, body.night .contact-form textarea, .contact-form select {*/
-/*  background-color: rgb(245, 245, 245);*/
-/*}*/
-
 
 .contact-form label {
   display: block;
@@ -340,7 +340,7 @@ body.night form button {
   border-radius:3px;
 }
 
-select, option {
+select, option{
   -webkit-appearance: none; /* WebKit/Chromium */
   -moz-appearance: none; /* Gecko */
 }
@@ -355,6 +355,7 @@ select, option {
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: rgb(20, 20, 20);
+  background-color: white;
 }
 
 .contact-form option {
