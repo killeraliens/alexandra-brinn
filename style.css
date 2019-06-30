@@ -21,16 +21,9 @@ body.night {
 }
 
 body.night * {
-  color: rgb(240, 240, 240);
+  color: rgb(245, 245, 245);
 }
 
-body.night form * {
-  color: black;
-}
-
-body.night form button {
-  border: 1px solid black;
-}
 
 h1 {
   font-size: 16px;
@@ -95,14 +88,14 @@ header {
   height: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 
 input:checked + .slider {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
 }
 
 input:checked + .slider:before {
@@ -138,7 +131,7 @@ input:checked + .slider:before {
 button {
   line-height: 36px;
   background-color: black;
-  color: rgb(240, 240, 240);
+  color: rgb(245, 245, 245);
   padding: 0px 18px;
   border: none;
   border-radius: 4px;
@@ -151,14 +144,14 @@ button {
 
 body.night button {
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(240, 240, 240);
+  border: 1px solid rgb(245, 245, 245);
   box-sizing: border-box;
   line-height: 34px;
   padding: 0px 16px;
 }
 
 body.night button.active, body.night button:active {
-  background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
+  background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));
   color: black;
 }
 
@@ -294,31 +287,76 @@ img.desktop {
 }
 
 body.night .contact-form {
-  color: black;
-  border-color: black;
+  /*color: black;*/
+  /*border-color: black;*/
+  background-color: rgba(255, 255, 255, .3);
 }
 
-.contact-form fieldset, .contact-form input, .contact-form textarea {
+body.night form * {
+  /*color: black;*/
+  color: lightgray;
+}
+
+body.night form button {
+  /*border: 1px solid black;*/
+}
+
+.contact-form fieldset, .contact-form input, .contact-form textarea, .contact-form select {
   border: none;
 }
-.contact-form label {
-  display: block;
-  /* margin-bottom: 2px; */
+
+body.night .contact-form input, body.night .contact-form textarea, .contact-form select {
+  background-color: rgb(245, 245, 245);
+
 }
 
-.contact-form input, .contact-form textarea  {
-  line-height: 30px;
+
+.contact-form label {
+  display: block;
+   margin-bottom: 3px;
+}
+
+.contact-form input, .contact-form textarea {
+  background-color: rgb(245, 245, 245);
+  line-height: 34px;
   padding: 0px 8px;
   width: 100%;
   margin-bottom: 10px;
   border-radius:3px;
 }
 
+select, option {
+  -webkit-appearance: none; /* WebKit/Chromium */
+  -moz-appearance: none; /* Gecko */
+}
+
+.contact-form select {
+  line-height: 34px;
+  width: 100%;
+  padding: 0 8px;
+  margin-bottom: 10px;
+  /*margin-top: 10px;*/
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: rgb(20, 20, 20);
+}
+
+.contact-form option {
+  /*padding: 8px;*/
+}
+
+
+body.night .contact-form select {
+  background-color: none;
+
+}
+
 .contact-form h1 {
   margin-bottom: 10px;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus  {
   outline: none;
   box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
@@ -387,3 +425,9 @@ a:hover, a:focus {
   @media (min-width: 1800px) {
   }
 /* } */
+
+/* Specific Sections */
+
+#contactSection p {
+  /*margin-bottom: 10px;*/
+}

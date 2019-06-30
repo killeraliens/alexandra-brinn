@@ -50,10 +50,15 @@
 
 function returnContactSectionHtml() {
   return `
-    <section id="contactSection" class="container vertical-center-container">
-      <div class="vertical-center-content form-wrap">
+    <section id="contactSection" class="container">
+<!--    <section id="contactSection" class="container vertical-center-container">-->
+<!--      <div class="vertical-center-content form-wrap">-->
+          <p><b>I am currently looking for a fun and organized team with experienced developers
+            where I can contribute by combining my new coding skills with UX design.
+            Contact me regarding potential projects, or drop me a line.</b>
+          </p>
           <form id="js-contact-form" class="contact-form" action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST" >
-            <h1>Get In Touch</h1>
+            <h1>Send me a message.</h1>
             <fieldset name="contact-info">
               <label for="name" required>Name</label>
               <input id="name" name="name" type="text" placeholder="Your Name" required>
@@ -61,14 +66,21 @@ function returnContactSectionHtml() {
               <input id="email" name="_replyto" type="email" placeholder="Your Email" required>
             </fieldset>
             <fieldset name="message-content">
+              <label for="subject" >Subject</label>
+              <select name="_subject">
+                <option value="more-info" selected>Request more info</option>
+                <option value="schedule">Schedule an interview</option>
+                <option value="project">I have a project</option>
+                <option value="feedback">Feedback</option>
+              </select>
               <label for="message" required>Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea name="message" id="message" rows="3"></textarea>
             </fieldset>
             <input type="hidden" name="_format" value="plain">
             <input type="hidden" name="_next" value="https://killeraliens.github.io/alexandra-brinn/index.html" />
             <button id="js-submit-email-button" type="submit" >Send</button>
           </form>
-      </div>
+<!--      </div>-->
     </section>
   `;
 }

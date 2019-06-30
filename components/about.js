@@ -1,4 +1,4 @@
-function returnAboutSectionHtml() {
+function returnAboutSectionString() {
     return `
          <section id="aboutSection" class="container vertical-center-container">
           <div class="vertical-center-content">
@@ -19,10 +19,10 @@ function returnAboutSectionHtml() {
     `;
 }
 
-function injectAboutSectionHtml() {
-    $('#js-main-display').html(returnAboutSectionHtml());
+function injectAboutSectionString() {
+    $('#js-main-display').html(returnAboutSectionString());
 }
 
 function renderAboutSection() {
-    injectAboutSectionHtml();
+    injectAboutSectionString();
 }
