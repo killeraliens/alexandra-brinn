@@ -47,7 +47,6 @@
 // }
 
 
-
 function returnContactSectionHtml() {
   return `
     <section id="contactSection" class="container">
@@ -68,14 +67,15 @@ function returnContactSectionHtml() {
             <fieldset name="message-content">
               <label for="subject" >Subject</label>
               <select name="_subject">
-                <option value="more-info" selected>Request more info</option>
-                <option value="schedule">Schedule an interview</option>
-                <option value="project">I have a project</option>
-                <option value="feedback">Feedback</option>
+                <option value="Request more info">Request more info</option>
+                <option value="Schedule an interview">Schedule an interview</option>
+                <option value="I have a project">I have a project</option>
+                <option value="Feedback">Feedback</option>
               </select>
               <label for="message" required>Message</label>
               <textarea name="message" id="message" rows="3"></textarea>
             </fieldset>
+            <input type="hidden" name="_subject"/>
             <input type="hidden" name="_format" value="plain">
             <input type="hidden" name="_next" value="https://killeraliens.github.io/alexandra-brinn/index.html" />
             <button id="js-submit-email-button" type="submit" >Send</button>
@@ -91,5 +91,5 @@ function injectContactSectionHtml() {
 
 function renderContactSection() {
     injectContactSectionHtml();
-    // handleEmailFormSubmit();
+
 }
