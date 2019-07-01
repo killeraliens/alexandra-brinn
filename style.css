@@ -464,6 +464,31 @@ a:hover, a:focus {
   margin-bottom: 20px;
 }
 
+#skillsSection {
+  margin-bottom: 40px;
+}
 .skill-category-group {
   margin-bottom: 20px;
+  text-align: center;
 }
+
+@media (min-width: 600px) {
+  .skill-category-group {
+    text-align: left;
+  }
+}
+
+ul.skill-list li {
+  display: inline-block;
+}
+
+ul.skill-list li:after {
+  content: '  • ';
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+ul.skill-list li:last-child:after {
+  content: '';
+}
+

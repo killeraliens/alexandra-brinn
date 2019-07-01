@@ -5,7 +5,7 @@ function UxSkills() {
 
 function DevSkills() {
     this.category = `Dev`;
-    this.list = [`Ruby on Rails`, `HTML5`, `CSS/Sass`, `Bootstrap`, `JavaScript`, `jQuery`, `SQL`, `PostgreSQL`, `MVC architecture`, `OOP`, `git`, `GitHub`, `Heroku`];
+    this.list = [`Ruby on Rails`, `HTML5`, `CSS/Sass`, `Bootstrap`, `JavaScript`, `jQuery`, `SQL`, `PostgreSQL`, `MVC architecture`, `OOP`, `git & GitHub`, `Heroku`];
 }
 
 function OtherSkills() {
@@ -23,8 +23,10 @@ function generateCategoryArr() {
 
 function returnSkillsSectionString() {
     return `
-        <section id="skillsSection" class="container">
-          ${returnSkillCategoryStrings()}
+        <section id="skillsSection" class="container vertical-center-container">
+          <div class="vertical-center-content">
+            ${returnSkillCategoryStrings()}
+          </div>
         </section>
     `;
 }
@@ -35,7 +37,7 @@ function returnSkillCategoryStrings() {
         return `
         <div class="skill-category-group">
             <h2>${category.category}</h2>
-            <ul>
+            <ul class="skill-list">
               ${returnListString(category.list)} 
             </ul> 
          </div>`;
