@@ -175,11 +175,19 @@ body.night button.active, body.night button:active {
 }
 
 button.active, button:active {
-  background-color: purple;
   outline: none;
   -webkit-appearance: none; /* WebKit/Chromium */
   -moz-appearance: none; /* Gecko */
+}
 
+#js-about-button.active, #js-about-button:active {
+  background-color: #5400d8;
+}
+#js-projects-button.active, #js-projects-button:active {
+  background-color: #94b101;
+}
+#js-contact-button.active, #js-contact-button:active {
+  background-color: #039cca;
 }
 
 button:hover, button:focus {
