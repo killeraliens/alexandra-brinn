@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d44a2dfd-343b-45a9-9fa8-563fd9f5c73f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/components/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/skills.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="29" column="114" lean-forward="true" selection-start-line="29" selection-start-column="114" selection-end-line="29" selection-end-column="114" />
+            <state relative-caret-position="174">
+              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -74,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/skills.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="7" column="147" selection-start-line="7" selection-start-column="147" selection-end-line="7" selection-end-column="147" />
+            <state relative-caret-position="257">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -97,9 +95,9 @@
         <option value="$PROJECT_DIR$/components/contact.js" />
         <option value="$PROJECT_DIR$/components/projects.js" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/components/skills.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -199,12 +197,12 @@
       <workItem from="1561569165364" duration="6831000" />
       <workItem from="1561591193760" duration="1261000" />
       <workItem from="1561602602435" duration="42918000" />
-      <workItem from="1561865767729" duration="27449000" />
+      <workItem from="1561865767729" duration="27973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78459000" />
+    <option name="totallyTimeSpent" value="78983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="186" y="32" width="1157" height="646" extended-state="0" />
@@ -278,13 +276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="29" column="114" lean-forward="true" selection-start-line="29" selection-start-column="114" selection-end-line="29" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/about.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -301,8 +292,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/skills.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="7" column="147" selection-start-line="7" selection-start-column="147" selection-end-line="7" selection-end-column="147" />
+        <state relative-caret-position="257">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
         </state>
       </provider>
     </entry>
