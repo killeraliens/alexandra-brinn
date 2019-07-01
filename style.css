@@ -524,11 +524,21 @@ form legend {
   /*color: grey;*/
 }
 
-hr {
-  border-color: gray;
-  margin-bottom: 10px;
-}
+/*form hr {*/
+/*  box-sizing: content-box;*/
+/*  border-color: black;*/
+/*  margin-bottom: 10px;*/
+/*  border-width: 1px;*/
+/*}*/
 
 #js-us-form fieldset {
   margin-bottom: 10px;
+  border-top: 1px solid grey;
+  /*padding-top: 10px;*/
+}
+
+form input[type=radio] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }

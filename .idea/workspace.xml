@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/us.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="415">
+              <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#label#0;n#fieldset#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#label#1;n#fieldset#0;n#!!top" expanded="true" />
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="532" column="18" selection-start-line="532" selection-start-column="18" selection-end-line="532" selection-end-column="18" />
+            <state relative-caret-position="372">
+              <caret line="540" column="14" lean-forward="true" selection-start-line="540" selection-start-column="14" selection-end-line="540" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -128,8 +128,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="263" />
-    <option name="y" value="145" />
+    <option name="x" value="268" />
+    <option name="y" value="196" />
     <option name="width" value="1157" />
     <option name="height" value="646" />
   </component>
@@ -224,10 +224,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89239000" />
+    <option name="totallyTimeSpent" value="98547000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="263" y="145" width="1157" height="646" extended-state="0" />
+    <frame x="268" y="196" width="1157" height="646" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.13292253" />
@@ -303,13 +303,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/contact.js">
+    <entry file="file://$PROJECT_DIR$/components/skills.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="540" column="14" lean-forward="true" selection-start-line="540" selection-start-column="14" selection-end-line="540" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -320,24 +324,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/skills.js">
+    <entry file="file://$PROJECT_DIR$/components/contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="532" column="18" selection-start-line="532" selection-start-column="18" selection-end-line="532" selection-end-column="18" />
+        <state relative-caret-position="190">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/us.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="415">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#div#0;n#label#0;n#fieldset#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#label#1;n#fieldset#0;n#!!top" expanded="true" />
