@@ -189,6 +189,9 @@ button.active, button:active {
 #js-skills-button.active, #js-skills-button:active {
   background-color: #d54e00;
 }
+#js-us-button.active, #js-skills-button:active {
+  background-color: #00d569;
+}
 #js-contact-button.active, #js-contact-button:active {
   background-color: #039cca;
 }

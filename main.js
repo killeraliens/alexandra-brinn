@@ -35,6 +35,13 @@ function handleSkillsButton() {
     })
 }
 
+function handleUsButton() {
+    $('#js-us-button').on('click', function(e) {
+        renderUsSection();
+        handleClickedNavButton($(e.currentTarget));
+    })
+}
+
 
 function handleClickedNavButton(currentTarget) {
     const thisButton = currentTarget;
