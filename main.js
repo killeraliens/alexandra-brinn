@@ -57,7 +57,8 @@ function handleInputs() {
     handleContactButton();
     handleAboutButton();
     handleProjectsButton();
-    handleSkillsButton()
+    handleSkillsButton();
+    handleUsButton()
 }
 
 handleInputs();

@@ -322,7 +322,7 @@ img.desktop {
 /* Contact */
 
 
-.contact-form {
+form {
   text-align: left;
   display: block;
   background-color: lightgrey;
@@ -341,7 +341,7 @@ body.night form button {
   border: 1px solid black;
 }
 
-.contact-form fieldset, .contact-form input, .contact-form textarea, .contact-form select {
+form fieldset, form input, form textarea, form select {
   border: none;
 }
 
@@ -463,7 +463,7 @@ a:hover, a:focus {
 
 /* Specific Sections */
 
-#contactSection p {
+#contactSection p, #usSection p {
   margin-bottom: 20px;
 }
 
