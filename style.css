@@ -26,7 +26,7 @@ body.night * {
 }
 
 
-h1 {
+h1, h2 {
   font-size: 16px;
 }
 
@@ -181,14 +181,18 @@ button.active, button:active {
 }
 
 #js-about-button.active, #js-about-button:active {
-  background-color: #5400d8;
+  background-color: #541cd4;
 }
 #js-projects-button.active, #js-projects-button:active {
   background-color: #94b101;
 }
+#js-skills-button.active, #js-skills-button:active {
+  background-color: #d54e00;
+}
 #js-contact-button.active, #js-contact-button:active {
   background-color: #039cca;
 }
+
 
 button:hover, button:focus {
   transform: scale(1.1);
@@ -457,5 +461,9 @@ a:hover, a:focus {
 /* Specific Sections */
 
 #contactSection p {
+  margin-bottom: 20px;
+}
+
+.skill-category-group {
   margin-bottom: 20px;
 }

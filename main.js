@@ -28,6 +28,13 @@ function handleContactButton() {
     });
 }
 
+function handleSkillsButton() {
+    $('#js-skills-button').on('click', function(e) {
+        renderSkillsSection();
+        handleClickedNavButton($(e.currentTarget));
+    })
+}
+
 
 function handleClickedNavButton(currentTarget) {
     const thisButton = currentTarget;
@@ -43,6 +50,7 @@ function handleInputs() {
     handleContactButton();
     handleAboutButton();
     handleProjectsButton();
+    handleSkillsButton()
 }
 
 handleInputs();
