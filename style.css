@@ -387,8 +387,8 @@ body.night .contact-form select {
 
 }
 
-.contact-form h1 {
-  margin-bottom: 10px;
+form h1 {
+  margin-bottom: 20px;
 }
 
 .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus  {
@@ -495,3 +495,40 @@ ul.skill-list li:last-child:after {
   content: '';
 }
 
+
+
+/* US FORM */
+
+div.us-option-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.us-form label span {
+  font-weight: normal;
+}
+
+.us-form label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+form legend {
+  /*font-weight: bold;*/
+  /*color: grey;*/
+}
+
+hr {
+  border-color: gray;
+  margin-bottom: 10px;
+}
+
+#js-us-form fieldset {
+  margin-bottom: 10px;
+}
