@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   margin: 0px;
   transition: .4s;
-  background: rgb(245, 245, 245);
+  background: rgb(250, 250, 250);
 }
 
 body * {
@@ -18,17 +18,45 @@ body * {
 }
 
 body.night {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(30, 30, 30);
 }
 
 body.night * {
-  color: rgb(245, 245, 245);
+  color: rgb(220, 220, 220);
 }
 
 
 h1, h2 {
   font-size: 16px;
 }
+
+/*a {*/
+/*  color: #a84400;*/
+/*}*/
+
+a {
+  /*text-decoration: none;*/
+  /*color: rgb(150, 150, 150);*/
+  font-weight: bold;
+  -webkit-transition: .4s;
+  transition: .4s;
+  opacity: .6;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  /*font-size: 18px;*/
+  opacity: 1;
+  outline: none;
+  text-decoration: none;
+  /*text-shadow: 0 0 6px rgba(0, 0, 0, .3);*/
+}
+
+
+/*body.night a:hover, body.night a:active {*/
+/*  color: rgb(250, 250, 250);*/
+/*  opacity: .6;*/
+/*}*/
 
 p {
   margin: 10px 0px;
@@ -66,7 +94,7 @@ header {
 }
 
 body.night #logo {
-  font-family: 'UnifrakturMaguntia', sans-serif;
+  /*font-family: 'UnifrakturMaguntia', sans-serif;*/
 }
 
 @media (min-width: 600px) {
@@ -95,9 +123,9 @@ body.night #logo {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(30, 30, 30);
   /*background: linear-gradient(rgba(40, 40, 40, .5), rgba(40, 40, 40, 1));*/
-  /*box-shadow: inset 0 4px 40px rgb(40, 40, 40);*/
+  /*box-shadow: inset 0 4px 40px rgb(30, 30, 30);*/
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -109,8 +137,8 @@ body.night #logo {
   height: 26px;
   left: 4px;
   bottom: 4px;
-  /*background-color: rgb(245, 245, 245);*/
-  background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, .85));
+  /*background-color: rgb(250, 250, 250);*/
+  background: linear-gradient(rgba(250, 250, 250, 1), rgba(250, 250, 250, .9));
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -128,14 +156,17 @@ body.night #logo {
 
 
 input:checked + .slider {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(250, 250, 250);
+  box-shadow: inset 0 0px 10px rgba(30, 30, 30, .3);
+  /*background: linear-gradient(rgba(250, 250, 250, 1), rgba(250, 250, 250, .85));*/
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-  background-color: rgb(40, 40, 40);
+  /*background-color: rgb(30, 30, 30);*/
+  background: linear-gradient(rgba(30, 30, 30, .9), rgba(30, 30, 30, 1));
 }
 
 /*body.night .slider {*/
@@ -146,7 +177,7 @@ input:checked + .slider:before {
 /*  -webkit-transform: translateX(26px);*/
 /*  -ms-transform: translateX(26px);*/
 /*  transform: translateX(26px);*/
-/*  background-color: rgb(40, 40, 40);*/
+/*  background-color: rgb(30, 30, 30);*/
 /*}*/
 
 
@@ -164,8 +195,8 @@ input:checked + .slider:before {
 button {
   line-height: 36px;
   /*background-color: rgb(150, 150, 150);*/
-  background-color: rgb(40, 40, 40);
-  color: rgb(245, 245, 245);
+  background-color: rgb(30, 30, 30);
+  color: rgb(250, 250, 250);
   /*color: rgb(20, 20, 20);*/
   padding: 0px 18px;
   /*border: none;*/
@@ -181,30 +212,30 @@ button {
 }
 
 body.night button {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(245, 245, 245);
+  /*background-color: rgba(0, 0, 0, 0);*/
+  border: 1px solid rgb(250, 250, 250);
   box-sizing: border-box;
   line-height: 34px;
   /*padding: 0px 16px;*/
 }
 
 body.night button.active, body.night button:active {
-  background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));
+  background: linear-gradient(rgba(250, 250, 250, 1), rgba(250, 250, 250, 1));
   color: black;
 }
 
 button.active, button:active {
   outline: none;
   border: none;
-  color: rgb(245, 245, 245);
+  color: rgb(250, 250, 250);
   -webkit-appearance: none; /* WebKit/Chromium */
   -moz-appearance: none; /* Gecko */
 }
 
 button:hover, button:focus {
-  transform: none;
+  transform: scale(1.1);
   border: none;
-  color: rgb(245, 245, 245);
+  color: rgb(250, 250, 250);
   /*box-shadow: 0 0 8px rgba(40, 40, 40, .5);*/
 
 }
@@ -226,42 +257,58 @@ button:hover, button:focus {
 /*}*/
 
 
-#js-about-button.active, #js-about-button:active, #js-about-button:hover {
+/*#js-about-button.active, #js-about-button:active, #js-about-button:hover {*/
+/*  background-color: #3c00aa;;*/
+/*}*/
+/*#js-projects-button.active, #js-projects-button:active, #js-projects-button:hover {*/
+/*  background-color: #859f01;*/
+/*}*/
+/*#js-skills-button.active, #js-skills-button:active, #js-skills-button:hover {*/
+/*  background-color: #d54e00;*/
+/*}*/
+/*#js-us-button.active, #js-us-button:active, #js-us-button:hover {*/
+/*  background-color: #009249;*/
+/*}*/
+/*#js-contact-button.active, #js-contact-button:active, #js-contact-button:hover {*/
+/*  background-color: #039cca;*/
+/*}*/
+
+#js-about-button.active, #js-about-button:active {
   background-color: #3c00aa;;
 }
-#js-projects-button.active, #js-projects-button:active, #js-projects-button:hover {
+#js-projects-button.active, #js-projects-button:active {
   background-color: #859f01;
 }
-#js-skills-button.active, #js-skills-button:active, #js-skills-button:hover {
-  background-color: #d54e00;
+#js-skills-button.active, #js-skills-button:active {
+  background-color: #ca2100;
 }
-#js-us-button.active, #js-us-button:active, #js-us-button:hover {
+#js-us-button.active, #js-us-button:active {
   background-color: #009249;
 }
-#js-contact-button.active, #js-contact-button:active, #js-contact-button:hover {
-  background-color: #039cca;
+#js-contact-button.active, #js-contact-button:active {
+  background-color: #00838d;
 }
 
 /*#js-about-button.active, #js-about-button:active {*/
-/*  background-color: #3c00aa;;*/
+/*  background-color: #ca2100;*/
 /*}*/
 /*#js-projects-button.active, #js-projects-button:active {*/
-/*  background-color: #859f01;*/
+/*  background-color: #ca2100;*/
 /*}*/
 /*#js-skills-button.active, #js-skills-button:active {*/
-/*  background-color: #d54e00;*/
+/*  background-color: #ca2100;*/
 /*}*/
 /*#js-us-button.active, #js-us-button:active {*/
-/*  background-color: #009249;*/
+/*  background-color: #ca2100;*/
 /*}*/
 /*#js-contact-button.active, #js-contact-button:active {*/
-/*  background-color: #039cca;*/
+/*  background-color: #ca2100;*/
 /*}*/
 
 
 button:focus {
   /*transform: scale(1.1);*/
-  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  /*box-shadow: 0 0 6px rgba(0, 0, 0, .5);*/
   /*opacity: .6;*/
   outline: none;
   /*border: none;*/
@@ -383,14 +430,31 @@ img.desktop {
 
 /* Contact */
 
+.contact-list {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*width: 350px;*/
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
 
 form {
   text-align: left;
   display: block;
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
+  background-color: rgba(30, 30, 30, .4);
   padding: 20px;
   /*margin-top: 10px*/
   margin-bottom: 40px;
+}
+
+body.night form {
+  background-color: rgba(250, 250, 250, .5);
 }
 
 
@@ -401,6 +465,7 @@ body.night form * {
 
 body.night form button {
   border: 1px solid black;
+  background-color: rgba(250, 250, 250, 0);
 }
 
 form fieldset, form input, form textarea, form select {
@@ -413,7 +478,7 @@ form fieldset, form input, form textarea, form select {
 }
 
 .contact-form input, .contact-form textarea {
-  /*background-color: rgb(245, 245, 245);*/
+  /*background-color: rgb(250, 250, 250);*/
   line-height: 34px;
   padding: 0px 8px;
   width: 100%;
@@ -435,7 +500,7 @@ select, option{
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  color: rgb(40, 40, 40);
+  color: rgb(30, 30, 30);
   background-color: white;
 }
 
@@ -445,7 +510,7 @@ select, option{
 
 
 body.night .contact-form select {
-  color: rgb(40, 40, 40);
+  color: rgb(30, 30, 30);
 
 }
 
@@ -457,6 +522,7 @@ form h1 {
   outline: none;
   box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
+
 
 @media (min-height: 600px) and (min-width: 600px) {
   .form-wrap {
@@ -485,21 +551,6 @@ ul {
   width: 100%;
 }
 
-a, span {
-  /*text-decoration: none;*/
-  /*color: rgb(150, 150, 150);*/
-  font-weight: bold;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-a:hover, a:focus {
-  /*font-size: 18px;*/
-  opacity: .6;
-  outline: none;
-  text-decoration: none;
-  /*text-shadow: 0 0 6px rgba(0, 0, 0, .3);*/
-}
 
 
 

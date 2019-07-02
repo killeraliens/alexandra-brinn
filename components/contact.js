@@ -56,21 +56,27 @@ function returnContactSectionHtml() {
 <!--            where I can contribute by combining my new coding skills with UX design.-->
 <!--            Contact me regarding potential projects, or drop me a line.</b>-->
 <!--          </p>-->
+             <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">AlexandraBrinnCampbell@gmail.com</a></li>
+                <li><i class="fab fa-github"></i>github user <a href="https://github.com/killeraliens" target="_blank">killeraliens</a></li>
+                <li><i class="fab fa-linkedin"></i>LinkedIn profile <a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">Alexandra Campbell</a></li>
+                
+            </ul>
           <form id="js-contact-form" class="contact-form" action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST" >
-            <h1>Send me a message.</h1>
+            <h1>Send me a message</h1>
             <fieldset name="contact-info">
               <label for="name" required>Name</label>
-              <input id="name" name="name" type="text" placeholder="Your Name" required>
+              <input id="name" aria-label="name" name="name" type="text" placeholder="Your Name" required>
               <label for="email" required>Email</label>
-              <input id="email" name="_replyto" type="email" placeholder="Your Email" required>
+              <input id="email" aria-label="email" name="_replyto" type="email" placeholder="Your Email" required>
             </fieldset>
             <fieldset name="message-content">
               <label for="subject" >Subject</label>
-              <select name="_subject">
-                <option value="Request more info">Request more info</option>
-                <option value="Schedule an interview">Schedule an interview</option>
-                <option value="I have a project">I have a project</option>
-                <option value="Feedback">Feedback</option>
+              <select aria-label="subject" name="_subject">
+                <option aria-label="Request more info" value="Request more info">Request more info</option>
+                <option aria-label="Schedule an interview" value="Schedule an interview">Schedule an interview</option>
+                <option aria-label="I have a project" value="I have a project">I have a project</option>
+                <option aria-label="Feedback" value="Feedback">Feedback</option>
               </select>
               <label for="message" required>Message</label>
               <textarea name="message" id="message" rows="3"></textarea>
