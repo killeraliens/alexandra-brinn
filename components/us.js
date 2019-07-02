@@ -14,63 +14,84 @@ function Question(question, option1Arr, option2Arr, option3Arr){
 
 function generateQuestionsArr() {
     const q1 = new Question(
-        `If I was a font...`,
+        `If you were a font...`,
         [`I'd be Arial`, `true`, `#`],
         [`I'd be Times`, `false`, `#`],
         [`I'd be Courier`, `false`, `#`]
     );
 
-    const q2 = new Question(
-        `On marijuana`,
-        [`Colorado has it right`, `true`, `#`],
-        [`Open to working with the industry`, `true`, `#`],
-        [`Strictly opposed`, `false`, `#`]
-    );
+    // const q2 = new Question(
+    //     `On marijuana`,
+    //     [`Colorado has it right`, `true`, `#`],
+    //     [`Open to working with the industry`, `true`, `#`],
+    //     [`Strictly opposed`, `false`, `#`]
+    // );
 
-    const q3 = new Question(
+    const q2 = new Question(
         `Best description of your diet`,
         [`Convenient`, `false`, `#`],
         [`Homemade`, `true`, `#`],
         [`No carbs`, `false`, `#`]
     );
 
-    const q4 = new Question(
+    const q3 = new Question(
         `Which role best describes you?`,
         [`Architect`, `false`, `#`],
         [`Builder`, `false`, `#`],
         [`Organizer`, `true`, `#`]
     );
 
-    const q5 = new Question(
+    const q4 = new Question(
         `Describe your sense of humor`,
         [`Surreal, fun`, `false`, `#`],
         [`Dark, deadpan`, `true`, `#`],
         [`Wordplay, wit`, `false`, `#`]
     );
 
-    const q6 = new Question(
+    const q5 = new Question(
         `Straw usage`,
         [`No thanks`, `true`, `#`],
         [`Yes please`, `false`, `#`],
         [`Don't care`, `false`, `#`]
     );
 
-    const q7 = new Question(
+    const q6 = new Question(
         `Describe your daily commute car commitment`,
         [`I love my car`, `false`, `#`],
         [`I have to drive`, `false`, `#`],
         [`I have other options`, `true`, `#`]
     );
 
-    const q8 = new Question(
+    const q7 = new Question(
         `The majority of your workplace's attire`,
-        [`Casual, not sloppy`, `true`, `#`],
-        [`Designer aesthetic`, `false`, `#`],
-        [`Business professional`, `false`, `#`]
+        [`Casual`, `true`, `#`],
+        [`Design-y`, `false`, `#`],
+        [`Professional`, `false`, `#`]
+    );
+
+    const q8 = new Question(
+        `Your level of web dev expertise`,
+        [`None or just starting out`, `false`, `#`],
+        [`Mid level in my skill set`, `true`, `#`],
+        [`Technical expert in my department`, `true`, `#`]
+    );
+
+    const q9 = new Question(
+        `Your coworkers mostly see you as..`,
+        [`An educator - I enjoy sharing my subject knowledge`, `true`, `#`],
+        [`A hard worker - I'm very detail oriented`, `false`, `#`],
+        [`The office jokester - I keep things light here`, `true`, `#`]
+    );
+
+    const q10 = new Question(
+        `Outside of work you talk about..`,
+        [`Your family`, `false`, `#`],
+        [`Nature and travels`, `false`, `#`],
+        [`Your projects`, `true`, `#`]
     );
 
 
-    return [q1, q2, q3, q4, q5, q6, q7, q8];
+    return [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 }
 
 function returnUsSectionString() {
@@ -79,7 +100,7 @@ function returnUsSectionString() {
           <div class="">
               <p><b>Fill out this form to test our compatibility. The results are only visible to you.</b></p>
               <form id="js-us-form" class="us-form">
-                <h1>You</h1>
+                <h1>About You</h1>
                     ${returnFieldsetStrings()}
               </form>
           </div>

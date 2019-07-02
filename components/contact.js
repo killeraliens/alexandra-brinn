@@ -52,10 +52,10 @@ function returnContactSectionHtml() {
     <section id="contactSection" class="container">
 <!--    <section id="contactSection" class="container vertical-center-container">-->
 <!--      <div class="vertical-center-content form-wrap">-->
-          <p><b>I am currently looking for a fun and organized team with experienced developers
-            where I can contribute by combining my new coding skills with UX design.
-            Contact me regarding potential projects, or drop me a line.</b>
-          </p>
+<!--          <p><b>I am currently looking for a fun and organized team with experienced developers-->
+<!--            where I can contribute by combining my new coding skills with UX design.-->
+<!--            Contact me regarding potential projects, or drop me a line.</b>-->
+<!--          </p>-->
           <form id="js-contact-form" class="contact-form" action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST" >
             <h1>Send me a message.</h1>
             <fieldset name="contact-info">
@@ -80,6 +80,7 @@ function returnContactSectionHtml() {
             <input type="hidden" name="_next" value="https://killeraliens.github.io/alexandra-brinn/index.html" />
             <button id="js-submit-email-button" type="submit" >Send</button>
           </form>
+          
 <!--      </div>-->
     </section>
   `;
