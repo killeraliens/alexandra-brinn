@@ -56,12 +56,11 @@ function returnContactSectionHtml() {
 <!--            where I can contribute by combining my new coding skills with UX design.-->
 <!--            Contact me regarding potential projects, or drop me a line.</b>-->
 <!--          </p>-->
-             <ul class="contact-list">
-                <li><i class="fas fa-envelope"></i><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">AlexandraBrinnCampbell@gmail.com</a></li>
-                <li><i class="fab fa-github"></i>github user <a href="https://github.com/killeraliens" target="_blank">killeraliens</a></li>
-                <li><i class="fab fa-linkedin"></i>LinkedIn profile <a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">Alexandra Campbell</a></li>
-                
-            </ul>
+          <ul class="contact-list">
+             <li><i class="fas fa-envelope"></i><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">AlexandraBrinnCampbell@gmail.com</a></li>
+             <li><i class="fab fa-github"></i>github user <a href="https://github.com/killeraliens" target="_blank">killeraliens</a></li>
+             <li><i class="fab fa-linkedin"></i>LinkedIn profile <a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">Alexandra Campbell</a></li>       
+          </ul>
           <form id="js-contact-form" class="contact-form" action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST" >
             <h1>Send me a message</h1>
             <fieldset name="contact-info">

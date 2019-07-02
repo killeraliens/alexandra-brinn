@@ -280,13 +280,13 @@ button:hover, button:focus {
   background-color: #859f01;
 }
 #js-skills-button.active, #js-skills-button:active {
-  background-color: #ca2100;
+  background-color: #00838d;
 }
 #js-us-button.active, #js-us-button:active {
   background-color: #009249;
 }
 #js-contact-button.active, #js-contact-button:active {
-  background-color: #00838d;
+  background-color: #ca2800;
 }
 
 /*#js-about-button.active, #js-about-button:active {*/
