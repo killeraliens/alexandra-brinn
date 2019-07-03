@@ -105,6 +105,7 @@ header {
   height: 100px;
   width: 100px;
   float: left;
+  padding: 0px 4px;
 }
 
 /*.stretch {*/
