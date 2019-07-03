@@ -554,8 +554,24 @@ form h1 {
     margin-right:0%;
     width: 100%;
   }
+  .flex-fields {
+    display: flex;
+  }
+
+  .form-flex-child {
+    /*flex-grow: 1;*/
+    width: 50%;
+    /*margin: 0 auto;*/
+  }
+
+  .form-flex-child:nth-child(2) {
+    margin-left: 10px;
+    flex-grow: 1;
+  }
 
 }
+
+
 
 
 /* Footer */

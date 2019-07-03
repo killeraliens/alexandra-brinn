@@ -64,10 +64,16 @@ function returnContactSectionHtml() {
           <form id="js-contact-form" class="contact-form" action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST" >
             <h1>Send me a message</h1>
             <fieldset name="contact-info">
-              <label for="name" required>Name</label>
-              <input id="name" aria-label="name" name="name" type="text" placeholder="Your Name" required>
-              <label for="email" required>Email</label>
-              <input id="email" aria-label="email" name="_replyto" type="email" placeholder="Your Email" required>
+                <div class="flex-fields">
+                    <div class="form-flex-child">
+                      <label for="name" required>Name</label>
+                      <input id="name" aria-label="name" name="name" type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-flex-child">
+                      <label for="email" required>Email</label>
+                      <input id="email" aria-label="email" name="_replyto" type="email" placeholder="Your Email" required> 
+                    </div>
+                </div>
             </fieldset>
             <fieldset name="message-content">
               <label for="subject" >Subject</label>

@@ -11,7 +11,7 @@ function returnAboutSectionString() {
               </p>
               <p>
                 And when I'm not traveling, prototyping personal projects, or blasting my favorite LPs,
-                you can find me drinking liters of black coffee, pursuing more in-depth knowledge on JavaScript,
+                you can find me pursuing more in-depth knowledge on JavaScript,
                 React, and Node within Thinkful's full-stack program.
               </p>
               <p><b>I am currently looking for a fun and organized team with experienced developers
