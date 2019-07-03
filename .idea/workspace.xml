@@ -18,14 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-              <folding>
-                <element signature="e#979#983#0" expanded="true" />
-                <element signature="e#985#989#0" expanded="true" />
-                <element signature="e#1013#1017#0" expanded="true" />
-                <element signature="e#1020#1024#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -236,7 +230,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123961000" />
+    <option name="totallyTimeSpent" value="124220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="237" y="334" width="1157" height="646" extended-state="0" />
@@ -353,14 +347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding>
-            <element signature="e#979#983#0" expanded="true" />
-            <element signature="e#985#989#0" expanded="true" />
-            <element signature="e#1013#1017#0" expanded="true" />
-            <element signature="e#1020#1024#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
         </state>
       </provider>
     </entry>
