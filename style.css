@@ -45,7 +45,7 @@ a {
 }
 
 code {
-  /*opacity: .5;*/
+  opacity: .5;
   font-size: 14px;
 }
 
@@ -94,8 +94,17 @@ header {
 }
 
 #logo {
-  font-weight: bold;
+  /*font-weight: bold;*/
   /*font-size: 18px;*/
+  /*height: 60px;*/
+}
+
+
+
+.lead-image {
+  height: 100px;
+  width: 100px;
+  float: right;
 }
 
 /*.stretch {*/
@@ -110,6 +119,11 @@ body.night #logo {
   body.night #logo {
     font-size: 18px;
   }
+  .lead-image {
+    height: 150px;
+    width: 150px;
+  }
+
 }
 
 .switch {
@@ -283,19 +297,19 @@ button:hover, button:focus {
 /*}*/
 
 #js-about-button.active, #js-about-button:active {
-  background-color: #3c00aa;;
+  background-color: #3c00aa;
 }
 #js-projects-button.active, #js-projects-button:active {
-  background-color: #859f01;
+  background-color: #9900b6;
 }
 #js-skills-button.active, #js-skills-button:active {
-  background-color: #00838d;
+  background-color: #0081d2;
 }
 #js-us-button.active, #js-us-button:active {
-  background-color: #009249;
+  background-color: #00838d;
 }
 #js-contact-button.active, #js-contact-button:active {
-  background-color: #ca2800;
+  background-color: #00a87d;
 }
 
 /*#js-about-button.active, #js-about-button:active {*/

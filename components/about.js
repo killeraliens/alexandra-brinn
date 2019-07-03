@@ -2,10 +2,10 @@ function returnAboutSectionString() {
     return `
          <section id="aboutSection" class="container vertical-center-container">
           <div class="vertical-center-content">
+              <img src="./assets/killeraliens.svg" class="lead-image" >
               <h1>Hi, I'm Alexandra - AKA Ali, and I love designing and scripting digital experiences for people.</h1>
               <p>
-                As a full-stack developer coming from a background in industrial design, I enjoy all aspects of web development
-                from beginning-to-end. This includes user-flow illustration, HTML/CSS wireframing, database planning,
+                I enjoy all aspects of web development from beginning-to-end. This includes user-flow illustration, HTML/CSS wireframing, database planning,
                 and implementation of server-side languages like JavaScript, Ruby & SQL. Most of all, I enjoy learning
                 and experimenting with new software and languages which allow me to express, implement, and test creative concepts.
               </p>
