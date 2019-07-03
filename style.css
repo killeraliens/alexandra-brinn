@@ -40,8 +40,12 @@ a {
   font-weight: bold;
   -webkit-transition: .4s;
   transition: .4s;
-  opacity: .6;
+  opacity: .5;
   text-decoration: none;
+}
+
+code {
+  opacity: .5;
 }
 
 a:hover, a:focus {
@@ -92,6 +96,10 @@ header {
   font-weight: bold;
   /*font-size: 18px;*/
 }
+
+/*.stretch {*/
+/*  transform: scale(1, 1.5);*/
+/*}*/
 
 body.night #logo {
   /*font-family: 'UnifrakturMaguntia', sans-serif;*/
