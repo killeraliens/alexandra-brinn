@@ -45,7 +45,8 @@ a {
 }
 
 code {
-  opacity: .5;
+  /*opacity: .5;*/
+  font-size: 14px;
 }
 
 a:hover, a:focus {
