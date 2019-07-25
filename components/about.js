@@ -2,7 +2,6 @@ function returnAboutSectionString() {
     return `
          <section id="aboutSection" class="container vertical-center-container">
           <div class="vertical-center-content">
-              <img src="./assets/killeraliens.svg" class="lead-image" >
               <h1>Hi, I'm Alexandra - AKA Ali, and I love designing and scripting digital experiences for people.</h1>
               <p>
                 I enjoy all aspects of web development from beginning-to-end. This includes user-flow illustration, HTML/CSS wireframing, database planning,
@@ -15,7 +14,7 @@ function returnAboutSectionString() {
                 React, and Node within Thinkful's full-stack program.
               </p>
               <p><b>I am currently looking for a fun and organized team with experienced developers
-                where I can contribute by combining my new coding skills with UX design.</b>
+                where I can contribute by combining my new coding skills with UX design. Contact me regarding potential projects.</b>
               </p>
           </div>
         </section>

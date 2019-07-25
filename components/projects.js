@@ -9,12 +9,20 @@ function Project(title, siteUrl, paragraphArr, imgUrlArr, ghUrl) {
 function generateProjectArr() {
     const projectArr = [];
 
+    const doctorsNearMe = new Project(
+        "Doctors Near Me",
+        "https://killeraliens.github.io/doctors-near-me",
+        ["Find your next medical practitioner with Doctors Near Me, an app that locates and displays medical professionals based on your location, insurance plan, or specialty search. Built with HTML, CSS, jQuery, JavaScript, Better Doctor API, Google Maps JavaScript API, Google Geocoding and Reverse Geocoding APIs"],
+        [["./assets/doctors-near-me/mobile-1.png", "m1"], ["./assets/doctors-near-me/mobile-2.png", "m2"], ["./assets/doctors-near-me/desktop-1.png", "d1"], ["./assets/doctors-near-me/mobile-3.png", "m3"]],
+        "https://github.com/killeraliens/doctors-near-me"
+    );
+
     const cryptidsQuiz = new Project(
         "Cryptids Quiz",
         "https://killeraliens.github.io/quiz",
         ["Take my quiz on folklore creatures! A JQuery, HTML, CSS interactive app, with a focus on responsive design."],
         [["./assets/cryptids-quiz/mobile-1.png", "m1"], ["./assets/cryptids-quiz/mobile-2.png", "m2"], ["./assets/cryptids-quiz/desktop-1.png", "d2"], ["./assets/cryptids-quiz/mobile-3.png", "m3"]],
-        "https://killeraliens.github.io/quiz"
+        "https://github.com/killeraliens/quiz"
     );
 
     const fleshMe = new Project(
@@ -49,7 +57,7 @@ function generateProjectArr() {
     );
 
 
-    projectArr.push(cryptidsQuiz, fleshMe, goatsGuide, excuseEngine);
+    projectArr.push(doctorsNearMe, cryptidsQuiz, fleshMe, goatsGuide, excuseEngine);
     return projectArr;
 }
 
@@ -79,7 +87,7 @@ function returnArticleString(project) {
         </div>
         <h1>${project.title}</h1>
         <a href="${project.siteUrl}" target="_blank" aria-label="link to the ${project.title} site">${regexedSiteUrl(project.siteUrl)}</a>
-        ${returnParagraphsString(project)}  
+        ${returnParagraphsString(project)}
         <a href="${project.ghUrl}" target="_blank" aria-label="link to the github repo"><i class="fab fa-github"></i>See the code</a>
       </article>`;
 }

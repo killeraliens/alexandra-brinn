@@ -67,8 +67,12 @@ p {
   margin: 10px 0px;
 }
 
-header, nav, main, footer {
+ nav, main, footer {
   margin: 20px 20px 0px 20px;
+}
+
+header {
+  margin: 0px 20px 20px 20px;
 }
 
 @media (min-width: 600px) {
@@ -93,27 +97,32 @@ header {
   align-items: center;
 }
 
-#logo {
-  /*font-weight: bold;*/
-  /*font-size: 18px;*/
-  /*height: 60px;*/
+.logo {
+  height: 66px;
+}
+
+#logo-white {
+  display: none;
 }
 
 
-
-.lead-image {
+/*.lead-image {
   height: 100px;
   width: 100px;
   float: left;
   padding: 0px 4px;
-}
+}*/
 
 /*.stretch {*/
 /*  transform: scale(1, 1.5);*/
 /*}*/
 
-body.night #logo {
-  /*font-family: 'UnifrakturMaguntia', sans-serif;*/
+body.night #logo-white {
+  display: block;
+}
+
+body.night #logo-black {
+  display: none;
 }
 
 @media (min-width: 600px) {
