@@ -54,8 +54,8 @@ function handleSideNav() {
 function handleThemeSwitch() {
     $("#js-color-theme-switch").on('click', function(e) {
         $("body").toggleClass('night');
-        $("#introSection, #introSection *").toggleClass('night');
-        if (!$('#introSection').hasClass('night')) { resetSpider(); }
+        // $("#introSection, #introSection *").toggleClass('night');
+        if (!$('body').hasClass('night')) { resetSpider(); }
         const switchInput = $(e.currentTarget);
         switchInput.attr("checked", !switchInput.attr("checked"));
         switchInput.prop("aria-checked", !switchInput.prop("aria-checked"));

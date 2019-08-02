@@ -18,7 +18,7 @@ body * {
 }
 
 body.night {
-  background-color: rgb(30, 30, 30);
+  background-color: black;
 }
 
 body.night * {
@@ -288,7 +288,7 @@ button:focus {
   background-color: #00B3FF;
 }
 
-.color-bg.container.vertical-center-container.night {
+body.night .color-bg.container.vertical-center-container {
   background-color: #551FEA;
 }
 
@@ -309,7 +309,7 @@ button:focus {
   margin-top: 150px;*/
 }
 
-.window-frame.night {
+body.night .window-frame {
   background-color: black;
   border-color: white;
 }
@@ -330,7 +330,7 @@ button:focus {
   background-color: black;
 }
 
-.window-hori-line.night, .window-vert-line.night {
+body.night .window-hori-line, body.night .window-vert-line {
   background-color: white;
 }
 
@@ -370,7 +370,7 @@ button:focus {
   left: -31px;
 }
 
-.window-profile.night {
+body.night .window-profile {
   display: none;
 }
 
@@ -386,7 +386,7 @@ button:focus {
   transition: .6s;
 }
 
-.spider-vert-line.night {
+body.night .spider-vert-line {
   display: none;
 }
 
@@ -396,7 +396,7 @@ button:focus {
   left: 175px;
 }
 
-.spider.night {
+body.night .spider {
   display: none;
 }
 
