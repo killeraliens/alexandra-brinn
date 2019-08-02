@@ -7,7 +7,7 @@ function animateSpider() {
         $('#js-spider-before').css("display", "none");
         $('#js-spider-after').css("visibility", "visible");
         $('#js-spider-after').css("transform", "scale(1)");
-      }, 410);
+      }, 600);
     });
 
 }

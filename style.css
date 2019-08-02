@@ -361,8 +361,8 @@ button:focus {
   /*height: 100px;*/
   width: 3px;
   background-color: black;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .spider {
