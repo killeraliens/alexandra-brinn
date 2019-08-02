@@ -29,59 +29,67 @@ function handleThemeSwitch() {
     });
 }
 
-function handleAboutButton() {
-    $("#js-about-button").on('click', function(e) {
+function handleIntroLink() {
+    $("#js-intro-link").on('click', function(e) {
+        renderIntroSection();
+        handleClickedNavLink($(e.currentTarget));
+    });
+}
+
+function handleAboutLink() {
+    $("#js-about-link").on('click', function(e) {
         renderAboutSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     });
 }
 
-function handleProjectsButton() {
-    $('#js-projects-button').on('click', function(e) {
+function handleProjectsLink() {
+    $('#js-projects-link').on('click', function(e) {
         renderProjectsSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     });
 }
 
-function handleContactButton() {
-    $("#js-contact-button").on('click', function(e) {
+function handleContactLink() {
+    $("#js-contact-link").on('click', function(e) {
         renderContactSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     });
 }
 
-function handleSkillsButton() {
-    $('#js-skills-button').on('click', function(e) {
+function handleSkillsLink() {
+    $('#js-skills-link').on('click', function(e) {
         renderSkillsSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     })
 }
 
-function handleUsButton() {
-    $('#js-us-button').on('click', function(e) {
+function handleUsLink() {
+    $('#js-us-link').on('click', function(e) {
         renderUsSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     })
 }
 
 
-function handleClickedNavButton(currentTarget) {
-    const thisButton = currentTarget;
-    const otherButtons = $("#js-main-nav").find("button").not(thisButton);
-    thisButton.addClass("active");
-    thisButton.blur();
-    otherButtons.removeClass("active");
+function handleClickedNavLink(currentTarget) {
+    const thisLink = currentTarget;
+    const otherLinks = $("#js-nav-list").find("li").not(thisLink);
+    thisLink.addClass("active");
+    thisLink.blur();
+    otherLinks.removeClass("active");
 }
 
 
 function handleInputs() {
     handleSideNav();
     handleThemeSwitch();
-    handleContactButton();
-    handleAboutButton();
-    handleProjectsButton();
-    handleSkillsButton();
-    handleUsButton()
+    handleContactLink();
+    handleIntroLink();
+    handleAboutLink();
+    handleProjectsLink();
+    handleSkillsLink();
+    handleUsLink()
 }
 
 handleInputs();
