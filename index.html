@@ -11,49 +11,61 @@
 </head>
 <body class="">
   <header>
-      <!-- <h1 id="logo" class=""><code>Alexandra Brinn Campbell</code></h1> -->
-      <img src="./assets/logo.png" class="logo" id="logo-black" alt="ali logo">
-      <img src="./assets/logo-2.png" class="logo" id="logo-white" alt="ali logo">
+    <h1>Alexandra Brinn Campbell</h1>
+  </header>
+<!--   <nav id="js-main-nav" >
+      <button id="js-about-button" class="active" >About</button>
+      <button id="js-projects-button" >Projects</button>
+      <button id="js-skills-button" >Skills</button>
+      <button id="js-contact-button">Contact</button>
+  </nav> -->
+  <nav >
+      <ul id="js-nav-list" class="sidenav-mobile">
+        <li class="close-li"><a id="js-close-menu-link"><i class="far fa-times-circle"></i></a></li>
+        <li><a id="js-intro-link" href="#">Intro</a></li>
+        <li><a id="js-about-link" href="#">About</a></li>
+        <li><a id="js-projects-link" href="#">Projects</a></li>
+        <li><a id="js-skills-link" href="#">Skills</a></li>
+        <li><a id="js-contact-link" href="#">Contact</a></li>
+      </ul>
+     <button id="js-menu-button">
+      <i class="fas fa-bars"></i>
+    </button>
     <label class="switch" for="js-color-theme-switch">
       <input type="checkbox" name="color theme" id="js-color-theme-switch" aria-checked="false" aria-label="color theme switch">
       <span class="slider round"></span>
     </label>
-  </header>
-  <nav id="js-main-nav" >
-      <button id="js-about-button" class="active" >About</button>
-      <button id="js-projects-button" >Projects</button>
-      <button id="js-skills-button" >Skills</button>
-<!--      <button id="js-us-button">Us</button>-->
-      <button id="js-contact-button">Contact</button>
   </nav>
   <main id="js-main-display">
-    <section id="aboutSection" class="container vertical-center-container">
-      <div class="vertical-center-content">
-          <!-- <img src="./assets/killeraliens.svg" class="lead-image" > -->
-          <h2>Hi, I'm Alexandra - AKA Ali, and I love designing and scripting digital experiences for people.</h2>
-          <p>
-            I enjoy all aspects of web development from beginning-to-end. This includes user-flow illustration, HTML/CSS wireframing, database planning,
-            and implementation of server-side languages like JavaScript, Ruby & SQL. Most of all, I enjoy learning
-            and experimenting with new software and languages which allow me to express, implement, and test creative concepts.
-          </p>
-          <p>
-            And when I'm not traveling, prototyping personal projects, or blasting my favorite LPs,
-            you can find me pursuing more in-depth knowledge on JavaScript, React, and Node within Thinkful's full-stack program.
-          </p>
-          <p><b>I am currently looking for a fun and organized team with experienced developers where I can contribute by combining my new coding skills with UX design. Contact me regarding potential projects.</b></p>
+    <section id="introSection" role="banner" class="color-bg container vertical-center-container">
+      <div class="window-container">
+        <div id="window" class="window-frame">
+          <div class="window-gleam">
+            <div class="gleam-1"></div>
+            <div class="gleam-2"></div>
+          </div>
+          <div class="window-vert-line"></div>
+          <div class="window-hori-line"></div>
+          <img class="window-profile" src="./assets/window-illus/window-profile.svg" alt="killeraliens figure in window">
+          <div id="js-spider-line" class="spider-vert-line"></div>
+          <img id="js-spider-before" class="spider" src="./assets/window-illus/spider-before.svg" alt="spider dropping down a line in window">
+          <img id="js-spider-after" class="spider" src="./assets/window-illus/spider-after.svg" alt="spider has landed in window">
+        </div>
       </div>
     </section>
+
+
   </main>
-      <footer>
+<!--       <footer>
         <ul aria-label="external links menu">
           <li><a href="mailto:alexandrabrinncampbell@gmail.com" target="_blank" aria-label="link to email popup">Email me</a></li>
           <li><a href="https://github.com/killeraliens" target="_blank" aria-label="link to my github profile"><i class="fab fa-github"></i>killeraliens</a></li>
           <li><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank" aria-label="link to my linkedin profile"><i class="fab fa-linkedin"></i>Alexandra Campbell</a></li>
-<!--          <li><span id="location">USA & Abroad</span></li>-->
         </ul>
-      </footer>
+      </footer> -->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
           crossorigin="anonymous"></script>
+  <script src="./components/intro.js"></script>
   <script src="./components/about.js"></script>
   <script src="./components/projects.js"></script>
   <script src="./components/skills.js"></script>

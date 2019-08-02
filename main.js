@@ -1,64 +1,131 @@
+function animateSpider() {
+    $('#introSection').ready(function(e) {
+      $('.spider-vert-line').css('height', '100px');
+      $('#js-spider-before').css('top', '80px');
+      setTimeout(function() {
+        $('#js-spider-before').css("display", "none");
+        $('#js-spider-after').css("visibility", "visible");
+        $('#js-spider-after').css("transform", "scale(1)");
+      }, 600);
+    });
+
+    // $('#introSection').on('classChange', function(e) {
+    //   $('.spider-vert-line').css('height', '100px');
+    //   $('#js-spider-before').css('top', '80px');
+    //   setTimeout(function() {
+    //     $('#js-spider-before').css("display", "none");
+    //     $('#js-spider-after').css("visibility", "visible");
+    //     $('#js-spider-after').css("transform", "scale(1)");
+    //   }, 600);
+    // });
+}
+
+function resetSpider() {
+  $('.spider-vert-line').css('height', '15px');
+  $('#js-spider-before').css('top', '0px');
+  $('#js-spider-before').css("display", "block");
+  $('#js-spider-after').css("visibility", "hidden");
+  $('#js-spider-after').css("transform", "scale(1.1)");
+  animateSpider();
+}
+
+function handleSideNav() {
+  function openNav() {
+    $('#js-menu-button').on('click', function(e) {
+      $("#js-nav-list").css("width", "250px");
+      $("#js-nav-list").css("border", "4px solid black");
+    });
+    closeNav();
+  }
+
+  openNav();
+
+  function closeNav() {
+    $('#js-close-menu-button').on('click', function(e) {
+      $("#js-nav-list").css("width", "0px");
+    });
+    $('#js-nav-list').find('a').on('click', function(e) {
+      $("#js-nav-list").css("width", "0px");
+      setTimeout(function() {$("#js-nav-list").css("border", "none")}, 400);
+    });
+  }
+}
+
 function handleThemeSwitch() {
     $("#js-color-theme-switch").on('click', function(e) {
         $("body").toggleClass('night');
+        // $("#introSection, #introSection *").toggleClass('night');
+        if (!$('body').hasClass('night')) { resetSpider(); }
         const switchInput = $(e.currentTarget);
         switchInput.attr("checked", !switchInput.attr("checked"));
         switchInput.prop("aria-checked", !switchInput.prop("aria-checked"));
     });
 }
 
-function handleAboutButton() {
-    $("#js-about-button").on('click', function(e) {
+function handleIntroLink() {
+    $("#js-intro-link").on('click', function(e) {
+        renderIntroSection();
+        handleClickedNavLink($(e.currentTarget));
+        animateSpider();
+    });
+
+}
+
+function handleAboutLink() {
+    $("#js-about-link").on('click', function(e) {
         renderAboutSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     });
 }
 
-function handleProjectsButton() {
-    $('#js-projects-button').on('click', function(e) {
+function handleProjectsLink() {
+    $('#js-projects-link').on('click', function(e) {
         renderProjectsSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     });
 }
 
-function handleContactButton() {
-    $("#js-contact-button").on('click', function(e) {
+function handleContactLink() {
+    $("#js-contact-link").on('click', function(e) {
         renderContactSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     });
 }
 
-function handleSkillsButton() {
-    $('#js-skills-button').on('click', function(e) {
+function handleSkillsLink() {
+    $('#js-skills-link').on('click', function(e) {
         renderSkillsSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     })
 }
 
-function handleUsButton() {
-    $('#js-us-button').on('click', function(e) {
+function handleUsLink() {
+    $('#js-us-link').on('click', function(e) {
         renderUsSection();
-        handleClickedNavButton($(e.currentTarget));
+        handleClickedNavLink($(e.currentTarget));
     })
 }
 
 
-function handleClickedNavButton(currentTarget) {
-    const thisButton = currentTarget;
-    const otherButtons = $("#js-main-nav").find("button").not(thisButton);
-    thisButton.addClass("active");
-    thisButton.blur();
-    otherButtons.removeClass("active");
+function handleClickedNavLink(currentTarget) {
+    const thisLink = currentTarget;
+    const otherLinks = $("#js-nav-list").find("li").not(thisLink);
+    thisLink.addClass("active");
+    thisLink.blur();
+    otherLinks.removeClass("active");
 }
 
 
 function handleInputs() {
+    animateSpider();
+    handleSideNav();
     handleThemeSwitch();
-    handleContactButton();
-    handleAboutButton();
-    handleProjectsButton();
-    handleSkillsButton();
-    handleUsButton()
+    handleContactLink();
+    handleIntroLink();
+    handleAboutLink();
+    handleProjectsLink();
+    handleSkillsLink();
+    handleUsLink();
 }
 
 handleInputs();
