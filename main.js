@@ -1,3 +1,25 @@
+function handleSideNav() {
+  function openNav() {
+    $('#js-menu-button').on('click', function(e) {
+      $("#js-nav-list").css("width", "250px");
+    });
+    closeNav();
+  }
+
+  openNav();
+
+  function closeNav() {
+    $('#js-close-menu-button').on('click', function(e) {
+      $("#js-nav-list").css("width", "0px");
+    });
+    $('#js-nav-list').find('a').on('click', function(e) {
+      $("#js-nav-list").css("width", "0px");
+    });
+  }
+
+
+}
+
 function handleThemeSwitch() {
     $("#js-color-theme-switch").on('click', function(e) {
         $("body").toggleClass('night');
@@ -53,6 +75,7 @@ function handleClickedNavButton(currentTarget) {
 
 
 function handleInputs() {
+    handleSideNav();
     handleThemeSwitch();
     handleContactButton();
     handleAboutButton();

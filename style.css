@@ -81,13 +81,42 @@ header {
   }
 }
 
-i {
-  font-family: 'Fontawesome';
-  font-style: normal;
-  margin-right: 8px;
-  text-decoration: none;
+/* SIDE NAV MOBILE*/
+
+.sidenav-mobile {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.sidenav-mobile a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav-mobile .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
 
 /* Header */
 
@@ -97,42 +126,9 @@ header {
   align-items: center;
 }
 
-.logo {
-  height: 66px;
-}
-
-#logo-white {
-  display: none;
-}
-
-
-/*.lead-image {
-  height: 100px;
-  width: 100px;
-  float: left;
-  padding: 0px 4px;
-}*/
-
-/*.stretch {*/
-/*  transform: scale(1, 1.5);*/
-/*}*/
-
-body.night #logo-white {
-  display: block;
-}
-
-body.night #logo-black {
-  display: none;
-}
 
 @media (min-width: 600px) {
-  body.night #logo {
-    font-size: 18px;
-  }
-  .lead-image {
-    height: 150px;
-    width: 150px;
-  }
+
 
 }
 
@@ -226,87 +222,40 @@ input:checked + .slider:before {
 /* Nav */
 
 button {
-  line-height: 36px;
-  /*background-color: rgb(150, 150, 150);*/
-  background-color: rgb(30, 30, 30);
-  color: rgb(250, 250, 250);
-  /*color: rgb(20, 20, 20);*/
-  padding: 0px 18px;
-  /*border: none;*/
-  /*border: 1px solid rgb(20, 20, 20);*/
-  border-radius: 4px;
-  margin-right: 8px;
+  padding: 0;
+  background: none;
+  border-radius: 8px;
    -webkit-transition: .4s;
   transition: .4s;
-  font-size: 14px;
   cursor: pointer;
   border: none;
+}
 
+button > i {
+  font-size: 26px;
 }
 
 body.night button {
-  /*background-color: rgba(0, 0, 0, 0);*/
-  border: 1px solid rgb(250, 250, 250);
-  box-sizing: border-box;
-  line-height: 34px;
-  /*padding: 0px 16px;*/
+
 }
 
 body.night button.active, body.night button:active {
-  background: linear-gradient(rgba(250, 250, 250, 1), rgba(250, 250, 250, 1));
-  color: black;
+  color: white;
 }
 
 button.active, button:active {
   outline: none;
   border: none;
-  color: rgb(250, 250, 250);
   -webkit-appearance: none; /* WebKit/Chromium */
   -moz-appearance: none; /* Gecko */
 }
 
 button:hover, button:focus {
   transform: scale(1.1);
-  border: none;
-  color: rgb(250, 250, 250);
-  /*box-shadow: 0 0 8px rgba(40, 40, 40, .5);*/
 
 }
 
-/*#js-about-button {*/
-/*  background-color: #3c00aa;*/
-/*}*/
-/*#js-projects-button {*/
-/*  background-color: #859f01;*/
-/*}*/
-/*#js-skills-button {*/
-/*  background-color: #d54e00;*/
-/*}*/
-/*#js-us-button {*/
-/*  background-color: #009249;*/
-/*}*/
-/*#js-contact-button {*/
-/*  background-color: #039cca;*/
-/*}*/
-
-
-/*#js-about-button.active, #js-about-button:active, #js-about-button:hover {*/
-/*  background-color: #3c00aa;;*/
-/*}*/
-/*#js-projects-button.active, #js-projects-button:active, #js-projects-button:hover {*/
-/*  background-color: #859f01;*/
-/*}*/
-/*#js-skills-button.active, #js-skills-button:active, #js-skills-button:hover {*/
-/*  background-color: #d54e00;*/
-/*}*/
-/*#js-us-button.active, #js-us-button:active, #js-us-button:hover {*/
-/*  background-color: #009249;*/
-/*}*/
-/*#js-contact-button.active, #js-contact-button:active, #js-contact-button:hover {*/
-/*  background-color: #039cca;*/
-/*}*/
-
-#js-about-button.active, #js-about-button:active {
+/*#js-about-button.active, #js-about-button:active {
   background-color: #3c00aa;
 }
 #js-projects-button.active, #js-projects-button:active {
@@ -320,7 +269,7 @@ button:hover, button:focus {
 }
 #js-contact-button.active, #js-contact-button:active {
   background-color: #00a87d;
-}
+}*/
 
 /*#js-about-button.active, #js-about-button:active {*/
 /*  background-color: #ca2100;*/
