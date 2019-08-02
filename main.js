@@ -2,6 +2,7 @@ function handleSideNav() {
   function openNav() {
     $('#js-menu-button').on('click', function(e) {
       $("#js-nav-list").css("width", "250px");
+      $("#js-nav-list").css("border", "4px solid black");
     });
     closeNav();
   }
@@ -14,10 +15,9 @@ function handleSideNav() {
     });
     $('#js-nav-list').find('a').on('click', function(e) {
       $("#js-nav-list").css("width", "0px");
+      setTimeout(function() {$("#js-nav-list").css("border", "none")}, 400);
     });
   }
-
-
 }
 
 function handleThemeSwitch() {
