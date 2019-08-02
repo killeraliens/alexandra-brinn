@@ -369,7 +369,7 @@ body.night .window-hori-line, body.night .window-vert-line {
   top: 0px;
 }
 
-.window-gleam.night * {
+body.night .window-gleam * {
   background-color: white;
 }
 
