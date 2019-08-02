@@ -1,6 +1,5 @@
 function animateSpider() {
     $('#introSection').ready(function(e) {
-      console.log('line loaded');
       $('.spider-vert-line').css('height', '100px');
       $('#js-spider-before').css('top', '80px');
       setTimeout(function() {
@@ -10,6 +9,24 @@ function animateSpider() {
       }, 600);
     });
 
+    // $('#introSection').on('classChange', function(e) {
+    //   $('.spider-vert-line').css('height', '100px');
+    //   $('#js-spider-before').css('top', '80px');
+    //   setTimeout(function() {
+    //     $('#js-spider-before').css("display", "none");
+    //     $('#js-spider-after').css("visibility", "visible");
+    //     $('#js-spider-after').css("transform", "scale(1)");
+    //   }, 600);
+    // });
+}
+
+function resetSpider() {
+  $('.spider-vert-line').css('height', '15px');
+  $('#js-spider-before').css('top', '0px');
+  $('#js-spider-before').css("display", "block");
+  $('#js-spider-after').css("visibility", "hidden");
+  $('#js-spider-after').css("transform", "scale(1.1)");
+  animateSpider();
 }
 
 function handleSideNav() {
@@ -38,6 +55,7 @@ function handleThemeSwitch() {
     $("#js-color-theme-switch").on('click', function(e) {
         $("body").toggleClass('night');
         $("#introSection, #introSection *").toggleClass('night');
+        if (!$('#introSection').hasClass('night')) { resetSpider(); }
         const switchInput = $(e.currentTarget);
         switchInput.attr("checked", !switchInput.attr("checked"));
         switchInput.prop("aria-checked", !switchInput.prop("aria-checked"));
