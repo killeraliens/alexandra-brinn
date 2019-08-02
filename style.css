@@ -216,7 +216,7 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
   /*background-color: rgb(30, 30, 30);*/
-  background: linear-gradient(rgba(30, 30, 30, .9), rgba(30, 30, 30, 1));
+  background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 1));
 }
 
 
@@ -288,6 +288,10 @@ button:focus {
   background-color: #00B3FF;
 }
 
+.color-bg.container.vertical-center-container.night {
+  background-color: #551FEA;
+}
+
 .window-container {
   /*position: relative;*/
   margin: 0 auto;
@@ -305,6 +309,11 @@ button:focus {
   margin-top: 150px;*/
 }
 
+.window-frame.night {
+  background-color: black;
+  border-color: white;
+}
+
 .window-vert-line {
   position: relative;
   left: 145px;
@@ -319,6 +328,10 @@ button:focus {
   width: 100%;
   height: 4px;
   background-color: black;
+}
+
+.window-hori-line.night, .window-vert-line.night {
+  background-color: white;
 }
 
 .window-gleam {
@@ -347,10 +360,18 @@ button:focus {
   top: 0px;
 }
 
+.window-gleam.night * {
+  background-color: white;
+}
+
 .window-profile {
   position: relative;
   top: -206px;
   left: -31px;
+}
+
+.window-profile.night {
+  display: none;
 }
 
 .spider-vert-line {
@@ -365,11 +386,18 @@ button:focus {
   transition: .6s;
 }
 
+.spider-vert-line.night {
+  display: none;
+}
+
 .spider {
   position: absolute;
   top: 0px;
   left: 175px;
+}
 
+.spider.night {
+  display: none;
 }
 
 #js-spider-after {

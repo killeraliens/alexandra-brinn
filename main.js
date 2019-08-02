@@ -37,6 +37,7 @@ function handleSideNav() {
 function handleThemeSwitch() {
     $("#js-color-theme-switch").on('click', function(e) {
         $("body").toggleClass('night');
+        $("#introSection, #introSection *").toggleClass('night');
         const switchInput = $(e.currentTarget);
         switchInput.attr("checked", !switchInput.attr("checked"));
         switchInput.prop("aria-checked", !switchInput.prop("aria-checked"));
