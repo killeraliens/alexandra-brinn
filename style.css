@@ -361,6 +361,8 @@ button:focus {
   /*height: 100px;*/
   width: 3px;
   background-color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .spider {
@@ -371,10 +373,16 @@ button:focus {
 }
 
 #js-spider-after {
-  display: none;
+  visibility: hidden;
   width: 36px;
   left: 158px;
   top: 80px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -moz-transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 #js-spider-before {
@@ -382,6 +390,8 @@ button:focus {
   /*top: 80px;*/
   width: 41px;
   left: 156px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 /* Main */

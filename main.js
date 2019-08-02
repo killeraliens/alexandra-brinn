@@ -1,3 +1,17 @@
+function animateSpider() {
+    $('#introSection').ready(function(e) {
+      console.log('line loaded');
+      $('.spider-vert-line').css('height', '100px');
+      $('#js-spider-before').css('top', '80px');
+      setTimeout(function() {
+        $('#js-spider-before').css("display", "none");
+        $('#js-spider-after').css("visibility", "visible");
+        $('#js-spider-after').css("transform", "scale(1)");
+      }, 410);
+    });
+
+}
+
 function handleSideNav() {
   function openNav() {
     $('#js-menu-button').on('click', function(e) {
@@ -33,7 +47,9 @@ function handleIntroLink() {
     $("#js-intro-link").on('click', function(e) {
         renderIntroSection();
         handleClickedNavLink($(e.currentTarget));
+        animateSpider();
     });
+
 }
 
 function handleAboutLink() {
@@ -82,6 +98,7 @@ function handleClickedNavLink(currentTarget) {
 
 
 function handleInputs() {
+    animateSpider();
     handleSideNav();
     handleThemeSwitch();
     handleContactLink();
