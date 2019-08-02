@@ -284,9 +284,32 @@ button:focus {
   background-color: #00B3FF;
 }
 
-.color-bg {
-
+.window-frame {
+  width: 220px;
+  height: 300px;
+  border: 4px solid black;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 150px;
 }
+
+.window-vert-line {
+  position: relative;
+  left: 150px;
+  height: 100%;
+  width: 4px;
+  background-color: black;
+}
+
+.window-hori-line {
+  position: relative;
+  bottom: 230px;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+}
+
+
 
 
 /* Main */

@@ -89,7 +89,7 @@ function handleInputs() {
     handleAboutLink();
     handleProjectsLink();
     handleSkillsLink();
-    handleUsLink()
+    handleUsLink();
 }
 
 handleInputs();
