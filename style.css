@@ -284,18 +284,26 @@ button:focus {
   background-color: #00B3FF;
 }
 
+.window-container {
+  /*position: relative;*/
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 215px;
+}
+
 .window-frame {
-  width: 220px;
+  position: relative;
+  width: 215px;
   height: 300px;
   border: 4px solid black;
   background-color: white;
-  margin: 0 auto;
-  margin-top: 150px;
+  /*margin: 0 auto;
+  margin-top: 150px;*/
 }
 
 .window-vert-line {
   position: relative;
-  left: 150px;
+  left: 145px;
   height: 100%;
   width: 4px;
   background-color: black;
@@ -309,7 +317,31 @@ button:focus {
   background-color: black;
 }
 
+.window-gleam {
+  position: absolute;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari prior 9.0 */
+  transform: rotate(45deg); /* Standard syntax */
+  left: 65px;
+  top: 15px;
 
+}
+
+.gleam-1 {
+  position: relative;
+  height: 30px;
+  width: 4px;
+  background-color: black;
+}
+
+.gleam-2 {
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  background-color: black;
+  left: 12px;
+  top: 0px;
+}
 
 
 /* Main */
