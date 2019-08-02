@@ -14,11 +14,11 @@ body * {
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
-  color: black;
+  color: #111;
 }
 
 body.night {
-  background-color: black;
+  background-color: #111;
 }
 
 body.night * {
@@ -76,8 +76,17 @@ header {
   background-color: #111;
 }
 
+body.night header {
+  padding: 16px 20px 16px 20px;
+  background-color: white;
+}
+
 header h1 {
   color: white;
+}
+
+body.night header h1 {
+  color: #111;
 }
 
 @media (min-width: 600px) {
@@ -107,7 +116,7 @@ header h1 {
   padding: 8px 8px 8px 20px;
   text-decoration: none;
   font-size: 26px;
-  color: black;
+  color: #111;
   display: block;
   transition: 0.3s;
   opacity: 1;
@@ -119,7 +128,7 @@ header h1 {
 }
 
 .sidenav-mobile i {
-  color: black;
+  color: #111;
   font-size: 34px;
 }
 
@@ -173,7 +182,7 @@ header, nav {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(30, 30, 30);
+  background-color: #111;
   /*background: linear-gradient(rgba(40, 40, 40, .5), rgba(40, 40, 40, 1));*/
   /*box-shadow: inset 0 4px 40px rgb(30, 30, 30);*/
   -webkit-transition: .4s;
@@ -303,14 +312,14 @@ body.night .color-bg.container.vertical-center-container {
   position: relative;
   width: 215px;
   height: 300px;
-  border: 4px solid black;
+  border: 4px solid #111;
   background-color: white;
   /*margin: 0 auto;
   margin-top: 150px;*/
 }
 
 body.night .window-frame {
-  background-color: black;
+  background-color: #111;
   border-color: white;
 }
 
@@ -319,7 +328,7 @@ body.night .window-frame {
   left: 145px;
   height: 100%;
   width: 4px;
-  background-color: black;
+  background-color: #111;
 }
 
 .window-hori-line {
@@ -327,7 +336,7 @@ body.night .window-frame {
   bottom: 230px;
   width: 100%;
   height: 4px;
-  background-color: black;
+  background-color: #111;
 }
 
 body.night .window-hori-line, body.night .window-vert-line {
@@ -348,14 +357,14 @@ body.night .window-hori-line, body.night .window-vert-line {
   position: relative;
   height: 30px;
   width: 4px;
-  background-color: black;
+  background-color: #111;
 }
 
 .gleam-2 {
   position: absolute;
   height: 20px;
   width: 4px;
-  background-color: black;
+  background-color: #111;
   left: 12px;
   top: 0px;
 }
@@ -381,7 +390,7 @@ body.night .window-profile {
   height: 15px;
   /*height: 100px;*/
   width: 3px;
-  background-color: black;
+  background-color: #111;
   -webkit-transition: .6s;
   transition: .6s;
 }
@@ -558,12 +567,12 @@ body.night form {
 
 
 body.night form * {
-  color: black;
+  color: #111;
   /*color: lightgray;*/
 }
 
 body.night form button {
-  border: 1px solid black;
+  border: 1px solid #111;
   background-color: rgba(250, 250, 250, 0);
 }
 
@@ -599,7 +608,7 @@ select, option{
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  color: rgb(30, 30, 30);
+  color: #111;
   background-color: white;
 }
 
@@ -609,7 +618,7 @@ select, option{
 
 
 body.night .contact-form select {
-  color: rgb(30, 30, 30);
+  color: #111;
 
 }
 
@@ -758,7 +767,7 @@ form legend {
 
 /*form hr {*/
 /*  box-sizing: content-box;*/
-/*  border-color: black;*/
+/*  border-color: #111;*/
 /*  margin-bottom: 10px;*/
 /*  border-width: 1px;*/
 /*}*/
