@@ -126,8 +126,12 @@ header h1 {
 
 .sidenav-mobile .close-li {
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
+}
+
+.sidenav-mobile .close-li a {
+  padding: 0;
 }
 
 main {
@@ -343,6 +347,42 @@ button:focus {
   top: 0px;
 }
 
+.window-profile {
+  position: relative;
+  top: -206px;
+  left: -31px;
+}
+
+.spider-vert-line {
+  position: absolute;
+  top: 0px;
+  left: 175px;
+  height: 15px;
+  /*height: 100px;*/
+  width: 3px;
+  background-color: black;
+}
+
+.spider {
+  position: absolute;
+  top: 0px;
+  left: 175px;
+
+}
+
+#js-spider-after {
+  display: none;
+  width: 36px;
+  left: 158px;
+  top: 80px;
+}
+
+#js-spider-before {
+  /*display: none;*/
+  /*top: 80px;*/
+  width: 41px;
+  left: 156px;
+}
 
 /* Main */
 
