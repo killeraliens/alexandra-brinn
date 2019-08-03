@@ -431,6 +431,30 @@ body.night .spider {
   transition: .5s;
 }
 
+
+.spider-web {
+  visibility: hidden;
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  width: 150px;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+body.night .spider-web {
+  visibility: visible;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+
 /* Main */
 
 
