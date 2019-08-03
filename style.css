@@ -77,7 +77,9 @@ p {
 }
 
 section {
-  padding: 150px 20px 120px 20px;
+  /*padding: 130px 20px 100px 20px;*/
+  padding: 25vh 20px 25vh 20px;
+
 }
 
 header {
@@ -119,11 +121,36 @@ nav {
   z-index: 6;
 }
 
+footer {
+  text-align: center;
+  padding: 40px 20px 40px 20px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0px 8px;
+}
+
+footer ul li a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+}
+
 
 @media (min-width: 600px) {
+/*  footer {
+    text-align: center;
+    padding: 40px 20px 40px 20px;
+  }*/
 
-
-
+/*  section {
+    padding: 150px 20px 120px 20px;
+  }*/
 }
 
 
@@ -449,8 +476,6 @@ body.night .spider {
 }
 
 #js-spider-before {
-  /*display: none;*/
-  /*top: 80px;*/
   width: 41px;
   left: 156px;
   -webkit-transition: .5s;
@@ -730,29 +755,6 @@ form h1 {
 }
 
 
-
-
-/* Footer */
-
-footer {
-  text-align: center;
-  padding: 40px 20px 40px 20px;
-}
-
-footer ul li {
-  display: inline-block;
-  margin: 0px 8px;
-}
-
-footer ul li a {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-ul {
-  list-style: none;
-  width: 100%;
-}
 
 
 

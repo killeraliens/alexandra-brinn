@@ -67,9 +67,7 @@ function handleThemeSwitch() {
 
 function handleIntroLink() {
     $("#js-intro-link").on('click', function(e) {
-        // renderIntroSection();
         document.querySelector('#introSection').scrollIntoView(true);
-        // hideFooter();
         handleClickedNavLink($(e.currentTarget));
         resetSpider();
         setTimeout(function() { animateSpider() }, 1000);
@@ -145,5 +143,18 @@ function handleComponents() {
     handleContactLink();
 }
 
+$(document).ready(function() {
+  // $(this *).blur();
+});
+
 renderComponents();
 handleComponents();
+  // $(window).on('beforeunload', function() {
+  //   // window.scrollTo(0,0);
+  //   $(this).blur();
+
+  // });
+
+
+
+
