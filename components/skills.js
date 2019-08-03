@@ -38,8 +38,8 @@ function returnSkillCategoryStrings() {
         <div class="skill-category-group">
             <h2>${category.category}</h2>
             <ul class="skill-list">
-              ${returnListString(category.list)} 
-            </ul> 
+              ${returnListString(category.list)}
+            </ul>
          </div>`;
 
     });
@@ -56,7 +56,7 @@ function returnListString(categoryListArr) {
 
 
 function injectSkillsSectionString() {
-    $('#js-main-display').html(returnSkillsSectionString());
+    $('#projectsSection').after(returnSkillsSectionString());
 }
 
 function renderSkillsSection() {

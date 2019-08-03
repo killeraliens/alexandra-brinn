@@ -125,7 +125,7 @@ function returnSectionString() {
 }
 
 function injectSectionString() {
-    $("#js-main-display").html(returnSectionString());
+    $("#aboutSection").after(returnSectionString());
 }
 
 function renderProjectsSection() {

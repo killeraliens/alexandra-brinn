@@ -146,16 +146,20 @@ function handleClickedNavLink(currentTarget) {
 }
 
 
-function handleInputs() {
+function handleLoad() {
     animateSpider();
     handleSideNav();
     handleThemeSwitch();
-    handleContactLink();
     handleIntroLink();
+    renderAboutSection();
     handleAboutLink();
+    renderProjectsSection();
     handleProjectsLink();
+    renderSkillsSection();
     handleSkillsLink();
-    handleUsLink();
+    renderContactSection();
+    handleContactLink();
+    // handleUsLink();
 }
 
-handleInputs();
+handleLoad();

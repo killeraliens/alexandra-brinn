@@ -1,7 +1,7 @@
 function returnAboutSectionString() {
     return `
-         <section id="aboutSection" class="container vertical-center-container">
-          <div class="vertical-center-content">
+         <section id="aboutSection" class="container">
+          <div class="v">
               <h1>Hi, I'm Alexandra - AKA Ali, and I love designing and scripting digital experiences for people.</h1>
               <p>
                 I enjoy all aspects of web development from beginning-to-end. This includes user-flow illustration, HTML/CSS wireframing, database planning,
@@ -22,7 +22,7 @@ function returnAboutSectionString() {
 }
 
 function injectAboutSectionString() {
-    $('#js-main-display').html(returnAboutSectionString());
+    $('#introSection').after(returnAboutSectionString());
 }
 
 function renderAboutSection() {

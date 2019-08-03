@@ -706,8 +706,7 @@ form h1 {
 
 footer {
   text-align: center;
-  margin-bottom: 20px;
-  display: none;
+  padding: 40px 20px 40px 20px;
 }
 
 footer ul li {
@@ -717,6 +716,7 @@ footer ul li {
 
 footer ul li a {
   font-size: 16px;
+  line-height: 24px;
 }
 
 ul {
@@ -760,9 +760,9 @@ ul {
   margin-bottom: 20px;
 }
 
-#skillsSection {
+/*#skillsSection {
   margin-bottom: 40px;
-}
+}*/
 .skill-category-group {
   margin-bottom: 20px;
   text-align: center;

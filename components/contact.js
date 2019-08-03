@@ -90,7 +90,7 @@ function returnContactSectionHtml() {
 }
 
 function injectContactSectionHtml() {
-    $("#js-main-display").html(returnContactSectionHtml());
+    $("#skillsSection").after(returnContactSectionHtml());
 }
 
 function renderContactSection() {
