@@ -65,7 +65,7 @@ function handleThemeSwitch() {
 function handleIntroLink() {
     $("#js-intro-link").on('click', function(e) {
         // renderIntroSection();
-        document.querySelector('#introSection').scrollIntoView(alignToTop);
+        document.querySelector('#introSection').scrollIntoView(true);
         // hideFooter();
         handleClickedNavLink($(e.currentTarget));
         animateSpider();
@@ -82,8 +82,20 @@ function handleIntroLink() {
 // }
 function handleAboutLink() {
     $("#js-about-link").on('click', function(e) {
-        document.querySelector('#aboutSection').scrollIntoView(alignToTop);
-        handleClickedNavLink($(e.currentTarget));
+        document.querySelector('#aboutSection').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+        // function scrollToTargetAdjusted(){
+        //   var element = document.getElementById('aboutSection');
+        //   var headerOffset = 100;
+        //   var elementPosition = element.getBoundingClientRect().top;
+        //   var offsetPosition = elementPosition - headerOffset;
+
+        //   window.scrollTo({
+        //        top: offsetPosition,
+        //        behavior: "smooth"
+        //   });
+        // }
+      scrollToTargetAdjusted();
+      handleClickedNavLink($(e.currentTarget));
 
     });
 }
