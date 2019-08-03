@@ -109,13 +109,12 @@ function handleSkillsLink() {
     })
 }
 
-function handleUsLink() {
-    $('#js-us-link').on('click', function(e) {
-        // renderUsSection();
-        handleClickedNavLink($(e.currentTarget));
-        renderFooter();
-    })
-}
+// function handleUsLink() {
+//     $('#js-us-link').on('click', function(e) {
+//         handleClickedNavLink($(e.currentTarget));
+//         renderFooter();
+//     })
+// }
 
 
 function handleClickedNavLink(currentTarget) {
@@ -127,20 +126,23 @@ function handleClickedNavLink(currentTarget) {
 }
 
 
-function handleLoad() {
+function renderComponents() {
+  renderAboutSection();
+  renderProjectsSection();
+  renderSkillsSection();
+  renderContactSection();
+}
+
+function handleComponents() {
     animateSpider();
     handleSideNav();
     handleThemeSwitch();
     handleIntroLink();
-    renderAboutSection();
     handleAboutLink();
-    renderProjectsSection();
     handleProjectsLink();
-    renderSkillsSection();
     handleSkillsLink();
-    renderContactSection();
     handleContactLink();
-    // handleUsLink();
 }
 
-handleLoad();
+renderComponents();
+handleComponents();
