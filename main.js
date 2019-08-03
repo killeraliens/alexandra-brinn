@@ -64,19 +64,27 @@ function handleThemeSwitch() {
 
 function handleIntroLink() {
     $("#js-intro-link").on('click', function(e) {
-        renderIntroSection();
-        hideFooter();
+        // renderIntroSection();
+        document.querySelector('#introSection').scrollIntoView(alignToTop);
+        // hideFooter();
         handleClickedNavLink($(e.currentTarget));
         animateSpider();
     });
 
 }
 
+// function handleAboutLink() {
+//     $("#js-about-link").on('click', function(e) {
+//         renderAboutSection();
+//         handleClickedNavLink($(e.currentTarget));
+//         renderFooter();
+//     });
+// }
 function handleAboutLink() {
     $("#js-about-link").on('click', function(e) {
-        renderAboutSection();
+        document.querySelector('#aboutSection').scrollIntoView(alignToTop);
         handleClickedNavLink($(e.currentTarget));
-        renderFooter();
+
     });
 }
 
