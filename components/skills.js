@@ -23,8 +23,8 @@ function generateCategoryArr() {
 
 function returnSkillsSectionString() {
     return `
-        <section id="skillsSection" class="container vertical-center-container">
-          <div class="vertical-center-content">
+        <section id="skillsSection" class="container">
+          <div class="">
             ${returnSkillCategoryStrings()}
           </div>
         </section>

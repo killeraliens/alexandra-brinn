@@ -72,42 +72,23 @@ function handleIntroLink() {
         // hideFooter();
         handleClickedNavLink($(e.currentTarget));
         resetSpider();
-        setTimeout(function() { animateSpider() }, 500);
+        setTimeout(function() { animateSpider() }, 1000);
 
     });
 
 }
 
-// function handleAboutLink() {
-//     $("#js-about-link").on('click', function(e) {
-//         renderAboutSection();
-//         handleClickedNavLink($(e.currentTarget));
-//         renderFooter();
-//     });
-// }
+
 function handleAboutLink() {
     $("#js-about-link").on('click', function(e) {
-        document.querySelector('#aboutSection').scrollIntoView(true);
-        // function scrollToTargetAdjusted(){
-        //   var element = document.getElementById('aboutSection');
-        //   var headerOffset = 100;
-        //   var elementPosition = element.getBoundingClientRect().top;
-        //   var offsetPosition = elementPosition - headerOffset;
-
-        //   window.scrollTo({
-        //        top: offsetPosition,
-        //        behavior: "smooth"
-        //   });
-        // }
-      scrollToTargetAdjusted();
+      document.querySelector('#aboutSection').scrollIntoView(true);
       handleClickedNavLink($(e.currentTarget));
-
     });
 }
 
 function handleProjectsLink() {
     $('#js-projects-link').on('click', function(e) {
-        renderProjectsSection();
+        document.querySelector('#projectsSection').scrollIntoView(true);
         handleClickedNavLink($(e.currentTarget));
         renderFooter();
     });
@@ -115,14 +96,14 @@ function handleProjectsLink() {
 
 function handleContactLink() {
     $("#js-contact-link").on('click', function(e) {
-        renderContactSection();
+        document.querySelector('#contactSection').scrollIntoView(true);
         handleClickedNavLink($(e.currentTarget));
     });
 }
 
 function handleSkillsLink() {
     $('#js-skills-link').on('click', function(e) {
-        renderSkillsSection();
+        document.querySelector('#skillsSection').scrollIntoView(true);
         handleClickedNavLink($(e.currentTarget));
         renderFooter();
     })
@@ -130,7 +111,7 @@ function handleSkillsLink() {
 
 function handleUsLink() {
     $('#js-us-link').on('click', function(e) {
-        renderUsSection();
+        // renderUsSection();
         handleClickedNavLink($(e.currentTarget));
         renderFooter();
     })
