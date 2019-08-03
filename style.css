@@ -266,6 +266,11 @@ button > i {
   font-size: 26px;
 }
 
+nav button {
+  padding: 4px 0px;
+  border-radius: none;
+}
+
 button.active, button:active {
   outline: none;
   border: none;
@@ -639,10 +644,10 @@ body.night form * {
   /*color: lightgray;*/
 }
 
-body.night form button {
+/*body.night form button {
   border: 1px solid #111;
   background-color: rgba(250, 250, 250, 0);
-}
+}*/
 
 form fieldset, form input, form textarea, form select {
   border: none;
@@ -680,9 +685,6 @@ select, option{
   background-color: white;
 }
 
-.contact-form button {
-
-}
 
 .contact-form option {
   /*padding: 8px;*/

@@ -1,6 +1,6 @@
 function returnIntroSectionString() {
     return `
-      <section id="introSection" role="banner" class="color-bg">
+      <section id="introSection" role="banner" class="color-bg blue">
       <div class="window-container">
         <div id="window" class="window-frame">
           <div class="window-gleam">

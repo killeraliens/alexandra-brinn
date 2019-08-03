@@ -127,7 +127,8 @@ function handleClickedNavLink(currentTarget) {
 
 
 function renderComponents() {
-  renderAboutSection();
+  // renderIntroSection();
+  // renderAboutSection();
   renderProjectsSection();
   renderSkillsSection();
   renderContactSection();
