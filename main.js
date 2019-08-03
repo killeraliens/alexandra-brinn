@@ -65,6 +65,7 @@ function handleThemeSwitch() {
 function handleIntroLink() {
     $("#js-intro-link").on('click', function(e) {
         renderIntroSection();
+        hideFooter();
         handleClickedNavLink($(e.currentTarget));
         animateSpider();
     });
@@ -75,6 +76,7 @@ function handleAboutLink() {
     $("#js-about-link").on('click', function(e) {
         renderAboutSection();
         handleClickedNavLink($(e.currentTarget));
+        renderFooter();
     });
 }
 
@@ -82,6 +84,7 @@ function handleProjectsLink() {
     $('#js-projects-link').on('click', function(e) {
         renderProjectsSection();
         handleClickedNavLink($(e.currentTarget));
+        renderFooter();
     });
 }
 
@@ -96,6 +99,7 @@ function handleSkillsLink() {
     $('#js-skills-link').on('click', function(e) {
         renderSkillsSection();
         handleClickedNavLink($(e.currentTarget));
+        renderFooter();
     })
 }
 
@@ -103,13 +107,14 @@ function handleUsLink() {
     $('#js-us-link').on('click', function(e) {
         renderUsSection();
         handleClickedNavLink($(e.currentTarget));
+        renderFooter();
     })
 }
 
 
 function handleClickedNavLink(currentTarget) {
     const thisLink = currentTarget;
-    const otherLinks = $("#js-nav-list").find("li").not(thisLink);
+    const otherLinks = $("#js-nav-list").find("a").not(thisLink);
     thisLink.addClass("active");
     thisLink.blur();
     otherLinks.removeClass("active");

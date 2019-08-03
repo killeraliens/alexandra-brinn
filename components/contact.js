@@ -50,16 +50,10 @@
 function returnContactSectionHtml() {
   return `
     <section id="contactSection" class="container">
-<!--    <section id="contactSection" class="container vertical-center-container">-->
-<!--      <div class="vertical-center-content form-wrap">-->
-<!--          <p><b>I am currently looking for a fun and organized team with experienced developers-->
-<!--            where I can contribute by combining my new coding skills with UX design.-->
-<!--            Contact me regarding potential projects, or drop me a line.</b>-->
-<!--          </p>-->
           <ul class="contact-list">
-             <li><i class="fas fa-envelope"></i><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">AlexandraBrinnCampbell@gmail.com</a></li>
-             <li><i class="fab fa-github"></i>github user <a href="https://github.com/killeraliens" target="_blank">killeraliens</a></li>
-             <li><i class="fab fa-linkedin"></i>LinkedIn profile <a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">Alexandra Campbell</a></li>       
+             <li><i class="fas fa-envelope"></i><br><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">AlexandraBrinnCampbell@gmail.com</a></li>
+             <li><i class="fab fa-github"></i>github user <br><a href="https://github.com/killeraliens" target="_blank">killeraliens</a></li>
+             <li><i class="fab fa-linkedin"></i>LinkedIn profile <br><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">Alexandra Campbell</a></li>
           </ul>
           <form id="js-contact-form" class="contact-form" action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST" >
             <h1>Send me a message</h1>
@@ -71,7 +65,7 @@ function returnContactSectionHtml() {
                     </div>
                     <div class="form-flex-child">
                       <label for="email" required>Email</label>
-                      <input id="email" aria-label="email" name="_replyto" type="email" placeholder="Your Email" required> 
+                      <input id="email" aria-label="email" name="_replyto" type="email" placeholder="Your Email" required>
                     </div>
                 </div>
             </fieldset>
@@ -91,8 +85,6 @@ function returnContactSectionHtml() {
             <input type="hidden" name="_next" value="https://killeraliens.github.io/alexandra-brinn/index.html" />
             <button id="js-submit-email-button" type="submit" >Send</button>
           </form>
-          
-<!--      </div>-->
     </section>
   `;
 }
