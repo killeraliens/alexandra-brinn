@@ -85,7 +85,7 @@ function returnArticleString(project) {
         <div role="img" aria-label="project screenshots" class="project-image-wrap">
             ${returnImagesString(project)}
         </div>
-        <h1>${project.title}</h1>
+        <h2>${project.title}</h2>
         <a href="${project.siteUrl}" target="_blank" aria-label="link to the ${project.title} site">${regexedSiteUrl(project.siteUrl)}</a>
         ${returnParagraphsString(project)}
         <a href="${project.ghUrl}" target="_blank" aria-label="link to the github repo"><i class="fab fa-github"></i>See the code</a>

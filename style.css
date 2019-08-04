@@ -29,7 +29,7 @@ body * {
   box-sizing: border-box;
   font-size: 14px;
   color: #111;
-  /*line-height: 20px*/
+  line-height: 20px
 }
 
 body.night {
@@ -41,13 +41,13 @@ body.night * {
 }
 
 
-h1 {
+h1, h2, legend {
   font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
 }
 
-h2 {
-  font-size: 16px;
-}
+
 
 a {
   font-weight: bold;
@@ -58,12 +58,18 @@ a {
   font-size: 16px;
 }
 
-ul li i {
+
+ul li i, a i {
   margin-right: 8px;
 }
 
+
+ul li i, ul li {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 a:hover, a:focus {
-  /*font-size: 18px;*/
   opacity: 1;
   outline: none;
   text-decoration: none;
@@ -78,7 +84,10 @@ p {
 section {
   padding: 130px 20px 100px 20px;
   /*padding: 25vh 20px 25vh 20px;*/
+}
 
+#contactSection {
+  padding-bottom: 0px;
 }
 
 header {
@@ -130,10 +139,6 @@ footer ul li {
   margin: 0px 8px;
 }
 
-footer ul li a {
-  font-size: 16px;
-  line-height: 24px;
-}
 
 ul {
   list-style: none;
@@ -319,8 +324,7 @@ button:focus {
 .contact-form button {
   background-color: #111;
   color: white;
-  padding: 8px 18px;
-  font-weight: bold;
+  padding: 8px 16px;
 
 }
 
@@ -676,6 +680,7 @@ form fieldset, form input, form textarea, form select {
 .contact-form label {
   display: block;
    margin-bottom: 3px;
+   /*line-height: 20px;*/
 }
 
 .contact-form input, .contact-form textarea {
@@ -716,7 +721,7 @@ body.night .contact-form select {
 
 }
 
-form h1 {
+form legend {
   margin-bottom: 20px;
 }
 
