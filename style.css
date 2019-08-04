@@ -29,7 +29,7 @@ body * {
   box-sizing: border-box;
   font-size: 14px;
   color: #111;
-  line-height: 20px
+  /*line-height: 20px*/
 }
 
 body.night {
@@ -50,8 +50,6 @@ h2 {
 }
 
 a {
-  /*text-decoration: none;*/
-  /*color: rgb(150, 150, 150);*/
   font-weight: bold;
   -webkit-transition: .4s;
   transition: .4s;
@@ -74,11 +72,12 @@ a:hover, a:focus {
 
 p {
   margin: 10px 0px;
+  line-height: 20px
 }
 
 section {
-  /*padding: 130px 20px 100px 20px;*/
-  padding: 25vh 20px 25vh 20px;
+  padding: 130px 20px 100px 20px;
+  /*padding: 25vh 20px 25vh 20px;*/
 
 }
 
@@ -142,15 +141,11 @@ ul {
 }
 
 
-@media (min-width: 600px) {
-/*  footer {
-    text-align: center;
-    padding: 40px 20px 40px 20px;
-  }*/
-
-/*  section {
-    padding: 150px 20px 120px 20px;
-  }*/
+@media (min-width: 350px) and (min-height: 400px) {
+  section {
+    /*padding: 150px 20px 120px 20px;*/
+    padding: 25vh 20px 25vh 20px;
+  }
 }
 
 

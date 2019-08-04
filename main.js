@@ -6,7 +6,7 @@ function animateSpider() {
         $('#js-spider-before').css("display", "none");
         $('#js-spider-after').css("visibility", "visible");
         $('#js-spider-after').css("transform", "scale(1)");
-      }, 600);
+      }, 800);
     });
 
     // $('#introSection').on('classChange', function(e) {
