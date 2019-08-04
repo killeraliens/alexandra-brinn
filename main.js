@@ -34,7 +34,7 @@ function handleSideNav() {
     $('#js-menu-button').on('click', function(e) {
       $("#js-nav-list").css("width", "250px");
       $("#js-nav-list").css("border", "4px solid black");
-      $("#js-intro-link").focus();
+      $("#js-close-menu-link").focus();
     });
     closeNav();
   }
