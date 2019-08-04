@@ -49,6 +49,9 @@ function handleThemeSwitch() {
         if (!$('body').hasClass('night')) {
           resetSpider();
           animateSpider();
+          $('#logo').text('Alexandra Brinn Campbell');
+        } else {
+          $('#logo').text('killeraliens coming to abduct you');
         }
         const switchInput = $(e.currentTarget);
         switchInput.attr("checked", !switchInput.attr("checked"));
