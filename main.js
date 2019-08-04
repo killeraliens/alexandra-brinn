@@ -88,7 +88,6 @@ function handleProjectsLink() {
     $('#js-projects-link').on('click', function(e) {
         document.querySelector('#projectsSection').scrollIntoView(true);
         handleClickedNavLink($(e.currentTarget));
-        renderFooter();
     });
 }
 
@@ -133,6 +132,7 @@ function renderComponents() {
 }
 
 function handleComponents() {
+
     animateSpider();
     handleSideNav();
     handleThemeSwitch();
@@ -143,17 +143,9 @@ function handleComponents() {
     handleContactLink();
 }
 
-$(document).ready(function() {
-  // $(this *).blur();
-});
 
 renderComponents();
 handleComponents();
-  // $(window).on('beforeunload', function() {
-  //   // window.scrollTo(0,0);
-  //   $(this).blur();
-
-  // });
 
 
 
