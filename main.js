@@ -115,6 +115,33 @@ function handleClickedNavLink(currentTarget) {
 }
 
 
+function handleScroll() {
+  let element = document.querySelector('#header-bar');
+  let lastScrollTop = 0;
+  // $(window).on('scroll', function(e) {
+  //   $('#header-bar').css('top', '-48px');
+  // });
+  // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+  window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+     if (st > lastScrollTop){
+        // downscroll code
+        $('#header-bar').css('top', '-48px');
+        $('#nav-bar').css('top', '0px');
+        // $('#nav-bar').addClass('blue');
+        // $('#nav-bar').css('border-bottom', '3px solid black');
+     } else {
+        // upscroll code
+         $('#header-bar').css('top', '0px');
+         $('#nav-bar').css('top', '48px');
+         // $('#nav-bar').removeClass('blue');
+         // $('#nav-bar').css('border-bottom', 'none');
+     }
+     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  }, false);
+}
+
+
 function renderComponents() {
   // renderIntroSection();
   // renderAboutSection();
@@ -133,6 +160,7 @@ function handleComponents() {
     handleProjectsLink();
     handleSkillsLink();
     handleContactLink();
+    handleScroll();
 }
 
 

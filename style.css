@@ -104,6 +104,9 @@ header, nav {
   align-items: center;
 }
 
+#header-bar, #nav-bar {
+  transition: 0.5s;
+}
 
 body.night header {
   padding: 16px 20px 16px 20px;
@@ -123,7 +126,7 @@ body.night .logo {
 nav {
   position: fixed;
   width: 100%;
-  top: 50px;
+  top: 48px;
   padding: 16px 20px 16px 20px;
   z-index: 6;
 }
