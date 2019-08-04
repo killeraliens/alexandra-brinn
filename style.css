@@ -121,8 +121,7 @@ header, nav {
   transition: 0.5s;
 }
 
-body.night header {
-  padding: 16px 20px 16px 20px;
+body.night header:not(.section-header) {
   background-color: white;
 }
 
