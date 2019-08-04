@@ -46,6 +46,15 @@ h1, h2, legend {
   font-weight: bold;
 }
 
+.section-header h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /*text-decoration: underline;*/
+}
 
 
 a {
@@ -93,7 +102,7 @@ section {
   padding-bottom: 0px;
 }
 
-header {
+header:not(.section-header) {
   padding: 16px 20px 16px 20px;
   background-color: #111;
   position: fixed;
@@ -159,7 +168,12 @@ ul {
   }
 }
 
-
+@media (min-width: 600px) {
+  .section-header h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
 
 
 /* SIDE NAV MOBILE*/

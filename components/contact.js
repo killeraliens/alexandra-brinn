@@ -50,6 +50,7 @@
 function returnContactSectionHtml() {
   return `
     <section id="contactSection" class="container">
+         <header class="section-header"><h1 class="section-title">Contact</h1></header>
           <ul class="contact-list">
              <li><i class="fas fa-envelope"></i><br><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">AlexandraBrinnCampbell@gmail.com</a></li>
              <li><i class="fab fa-github"></i>github user <br><a href="https://github.com/killeraliens" target="_blank">killeraliens</a></li>

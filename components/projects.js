@@ -119,6 +119,7 @@ function returnArticlesListingString() {
 function returnSectionString() {
     return `
         <section id="projectsSection" class="container">
+          <header class="section-header"><h1 class="section-title">Projects</h1></header>
           ${returnArticlesListingString()}
         </section>
     `;
