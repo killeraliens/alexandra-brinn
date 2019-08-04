@@ -17,7 +17,6 @@ function resetSpider() {
   $('#js-spider-before').css("display", "block");
   $('#js-spider-after').css("visibility", "hidden");
   $('#js-spider-after').css("transform", "scale(1.1)");
-  // animateSpider();
 }
 
 function handleSideNav() {
@@ -69,6 +68,16 @@ function handleIntroLink() {
 }
 
 
+function handleLogoLink() {
+  $("#logo-link").on('click', function(e) {
+        document.querySelector('#introSection').scrollIntoView(true);
+        //handleClickedNavLink($(e.currentTarget));
+        resetSpider();
+        setTimeout(function() { animateSpider() }, 1000);
+
+    });
+}
+
 function handleAboutLink() {
     $("#js-about-link").on('click', function(e) {
       document.querySelector('#aboutSection').scrollIntoView(true);
@@ -118,15 +127,12 @@ function handleClickedNavLink(currentTarget) {
 function handleScroll() {
   let element = document.querySelector('#header-bar');
   let lastScrollTop = 0;
-  // $(window).on('scroll', function(e) {
-  //   $('#header-bar').css('top', '-48px');
-  // });
   // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
   window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
      var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
      if (st > lastScrollTop){
         // downscroll code
-        $('#header-bar').css('top', '-48px');
+        $('#header-bar').css('top', '-45px');
         $('#nav-bar').css('top', '0px');
         // $('#nav-bar').addClass('blue');
         // $('#nav-bar').css('border-bottom', '3px solid black');
@@ -151,8 +157,8 @@ function renderComponents() {
 }
 
 function handleComponents() {
-
     animateSpider();
+    handleLogoLink();
     handleSideNav();
     handleThemeSwitch();
     handleIntroLink();
