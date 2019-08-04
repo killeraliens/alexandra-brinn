@@ -9,15 +9,6 @@ function animateSpider() {
       }, 800);
     });
 
-    // $('#introSection').on('classChange', function(e) {
-    //   $('.spider-vert-line').css('height', '100px');
-    //   $('#js-spider-before').css('top', '80px');
-    //   setTimeout(function() {
-    //     $('#js-spider-before').css("display", "none");
-    //     $('#js-spider-after').css("visibility", "visible");
-    //     $('#js-spider-after').css("transform", "scale(1)");
-    //   }, 600);
-    // });
 }
 
 function resetSpider() {
@@ -147,9 +138,11 @@ function handleComponents() {
 
 renderComponents();
 handleComponents();
-// $(body).on('load', function() {
-//   $('#js-menu-button').focus();
-// })
+$(document).ready(function() {
+    if (window.location.pathname+window.location.hash == '/index.html#contactSection') {
+        console.log('Viewing contact form');
+    }
+});
 
 
 

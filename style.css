@@ -29,7 +29,6 @@ body * {
   box-sizing: border-box;
   font-size: 14px;
   color: #111;
-  line-height: 20px
 }
 
 body.night {
