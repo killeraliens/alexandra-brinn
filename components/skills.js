@@ -5,7 +5,7 @@ function UxSkills() {
 
 function DevSkills() {
     this.category = `Dev`;
-    this.list = [`Ruby on Rails`, `HTML5`, `CSS/Sass`, `Bootstrap`, `JavaScript`, `jQuery`, `SQL`, `PostgreSQL`, `MVC architecture`, `OOP`, `git & GitHub`, `Heroku`];
+    this.list = [`Ruby on Rails`, `HTML5`, `CSS/SCSS`, `Bootstrap`, `JavaScript`, `jQuery`, `SQL`, `PostgreSQL`, `MVC architecture`, `OOP`, `git & GitHub`, `Heroku`];
 }
 
 function OtherSkills() {

@@ -36,7 +36,7 @@ function generateProjectArr() {
 
     const goatsGuide = new Project(
         "Goats Guide",
-        `https://github.com/killeraliens/goats-guide`,
+        `http://www.goatsguide.com/`,
         ["A web tool and database concept developed from the needs of fans and practicing artists of extreme metal music genres. \n" +
         "Goat’s Guide is focused on helping bands and fans form local & international connections for live events, as well as event & venue discovery. \n" +
         "This is a project I am currently reworking and preparing to implement using React and Node. The current version was built using Ruby on Rails\n" +
