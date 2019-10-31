@@ -106,7 +106,6 @@ function handleSkillsLink() {
     $('#js-skills-link').on('click', function(e) {
         document.querySelector('#skillsSection').scrollIntoView(true);
         handleClickedNavLink($(e.currentTarget));
-        renderFooter();
     })
 }
 
@@ -172,12 +171,15 @@ function handleComponents() {
     handleScroll();
 }
 
-
-renderComponents();
-handleComponents();
+console.log('before render');
+$(renderComponents);
+$(handleComponents);
+// renderComponents();
+// handleComponents();
 $(document).ready(function() {
-    if (window.location.pathname+window.location.hash == '/index.html#contactSection') {
-        console.log('Viewing contact form');
+  console.log(window.location.pathname+window.location.hash);
+    if (window.location.pathname+window.location.hash === '/index.html#introSection') {
+        console.log('Viewing intro');
     }
 });
 
