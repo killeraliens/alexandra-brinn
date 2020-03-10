@@ -5,12 +5,12 @@ function UxSkills() {
 
 function DevSkills() {
     this.category = `Dev`;
-    this.list = [`Ruby on Rails`, `HTML5`, `CSS/SCSS`, `Bootstrap`, `JavaScript`, `jQuery`, `SQL`, `PostgreSQL`, `MVC architecture`, `OOP`, `git & GitHub`, `Heroku`];
+  this.list = [`Express`, `Ruby on Rails`, `HTML5`, `CSS/SCSS`, `Bootstrap`, `Node.js`, `JavaScript`, `jQuery`, `SQL`, `PostgreSQL`, `MVC architecture`, `OOP`, `git & GitHub`, `Heroku`, `Zeit`];
 }
 
 function OtherSkills() {
     this.category = `Other`;
-    this.list = [`AutoCad drafting`, `fabrication & installation plan documents`, `architectural scale models`, `PM software`];
+    this.list = [`AutoCad`, `fabrication & installation plan documents`, `architectural scale models`, `PM software`];
 }
 
 function generateCategoryArr() {
