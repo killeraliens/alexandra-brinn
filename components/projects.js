@@ -9,6 +9,18 @@ function Project(title, siteUrl, paragraphArr, imgUrlArr, ghUrl) {
 function generateProjectArr() {
     const projectArr = [];
 
+    const goatsGuideV2 = new Project(
+      "Goat's Guide (v2)",
+      "https://goatsguide.com",
+      ["If you know about an upcoming concert, fest, or tour, share the flier on Goat's Guide - a DIY bulletin board for poster artwork and event information. \n" +
+      "This is a redesign on a passion project utilizing React (hooks!), Node.js and feedback from version1. Focus is placed on making content upload features more prominent and easy-to-use to encourage user-sourced event data. \n" +
+      "Flier artwork is more prominent, and the database schema is simplified and reorganized with less constraints. \n" +
+      "Loading time is greatly reduced with this React SPA, and I was able to create a highly customized service layer using Express and Node.js. \n" +
+      "Additional features which invite more social activity are currently being built out. Server-side tests written in Mocha, Chai, Supertest. React testing in progress with Enzyme."],
+      [["./assets/goats-guide-v2/mobile-1.png", "m1"], ["./assets/goats-guide-v2/mobile-2.png", "m2"], ["./assets/goats-guide-v2/desktop-1.png", "d1"], ["./assets/goats-guide-v2/mobile-3.png", "m3"]],
+      "https://github.com/killeraliens/goats-client"
+    );
+
     const doctorsNearMe = new Project(
         "Doctors Near Me",
         "https://killeraliens.github.io/doctors-near-me",
@@ -39,8 +51,8 @@ function generateProjectArr() {
         `https://goats-guide.herokuapp.com/`,
         ["A web tool and database concept developed from the needs of fans and practicing artists of extreme metal music genres. \n" +
         "Goat’s Guide is focused on helping bands and fans form local & international connections for live events, as well as event & venue discovery. \n" +
-        "This is a project I am currently reworking and preparing to implement using React and Node. The current version was built using Ruby on Rails\n" +
-        "and utilizes HTML-scraping gems such as Watir and Nokogiri (among many others). Deployed with Heroku."],
+        "This is a project I am currently reworking using React and Node. This version was built using Ruby on Rails\n" +
+        "and utilizes HTML-scraping gems such as Watir and Nokogiri coupled with custom scripts to aggregate data. Deployed with Heroku."],
         [["./assets/goats-guide/mobile-1.png", "m1"], ["./assets/goats-guide/mobile-2.png", "m3"],  ["./assets/goats-guide/desktop-2.png", "d0"], ["./assets/goats-guide/desktop-1.png", "d2"]], //["./assets/goats-guide/mobile-3.png", "m2"],
         "https://github.com/killeraliens/goats-guide"
     );
@@ -57,7 +69,7 @@ function generateProjectArr() {
     );
 
 
-    projectArr.push(doctorsNearMe, cryptidsQuiz, fleshMe, goatsGuide, excuseEngine);
+    projectArr.push(goatsGuideV2, doctorsNearMe, cryptidsQuiz, fleshMe, goatsGuide, excuseEngine);
     return projectArr;
 }
 
