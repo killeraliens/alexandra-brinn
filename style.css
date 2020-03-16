@@ -66,6 +66,10 @@ a {
   font-size: 16px;
 }
 
+a.p-link {
+  font-size: 14px;
+}
+
 header a {
   opacity: 1;
   font-size: 14px;
