@@ -5,7 +5,7 @@ function UxSkills() {
 
 function DevSkills() {
     this.category = `Dev`;
-  this.list = [`Node.js`, `Express`, `Ruby on Rails`, `HTML5`, `CSS/SCSS`, `Bootstrap`, `jQuery`, `SQL`, `PostgreSQL`, `MVC architecture`, `REST API`, `OOP`, `git & GitHub`, `Heroku`, `now & Zeit`, `server-side testing in Mocha, Chai, Supertest`, `frontend testing with Jest, Enzyme`];
+    this.list = [`Postgres`, `Express`, `React`, `Node.js`, `Ruby on Rails`, `HTML5`, `CSS/SCSS`, `Bootstrap`, `jQuery`, `SQL`, `MVC architecture`, `REST API`, `OOP`, `git & GitHub`, `Heroku`, `now & Zeit`, `server-side testing in Mocha, Chai, Supertest`, `frontend testing with Jest, Enzyme`];
 }
 
 function OtherSkills() {
