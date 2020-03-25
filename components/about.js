@@ -2,7 +2,7 @@ function returnAboutSectionString() {
     return `
          <section id="aboutSection" class="container">
           <div class="">
-              <h1>Hi, I'm Alexandra - AKA Ali, and I script interactive digital experiences.</h1>
+              <h1>Hi, I'm Alexandra - AKA Ali, and I create interactive digital experiences.</h1>
               <p>
                 This includes user-flow illustration, HTML/CSS wireframing, React SPAs, and REST api development using React, Node.js and SQL.
               </p>
