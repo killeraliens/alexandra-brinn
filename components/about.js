@@ -4,7 +4,7 @@ function returnAboutSectionString() {
           <div class="">
               <h1>Hi, I'm Alexandra - AKA Ali, and I create interactive digital experiences.</h1>
               <p>
-                This includes user-flow illustration, HTML/CSS wireframing, React SPAs, and REST api development using React, Node.js and SQL.
+                This includes user-flow illustration, HTML/CSS/JavaScript wireframing, React SPAs, and REST API development using Node.js, Express, and PostgreSQL.
               </p>
               <p>
                 I earned my BA in industrial design from Emily Carr University Vancouver, BC in 2007,
