@@ -10,13 +10,13 @@ function generateProjectArr() {
     const projectArr = [];
 
     const goatsGuideV2 = new Project(
-      "Goat's Guide (v2)",
+      "Goat's Guide (pivot design)",
       "https://goatsguide.com",
       ["If you know about an upcoming concert, fest, or tour, share the flier on Goat's Guide - a DIY bulletin board for poster artwork and event information. \n" +
       "This is a redesign on a passion project utilizing React (hooks!), Node.js and feedback from version1. Attention is placed on making content upload features more prominent and easy-to-use to encourage user-sourced event data. \n" +
       "Loading time is reduced with this React SPA, and I was able to create a highly customized service layer using Express and Node.js. \n" +
       "Additional features which invite more social activity are currently being built out. Custom authorizaton and protected endpoints make both the frontend and API private to the community. \n" +
-      "Server-side tests written in Mocha, Chai, Supertest. React testing in progress with Enzyme."],
+      "Server-side tests written in Mocha, Chai, Supertest. React testing in progress with Enzyme. Demo account login details can be found <a class='p-link' href='https://github.com/killeraliens/goats-client'>here</a>."],
       [["./assets/goats-guide-v2/mobile-1.png", "m1"], ["./assets/goats-guide-v2/mobile-2.png", "m2"], ["./assets/goats-guide-v2/desktop-1.png", "d1"], ["./assets/goats-guide-v2/mobile-3.png", "m3"]],
       "https://github.com/killeraliens/goats-client"
     );
@@ -47,12 +47,13 @@ function generateProjectArr() {
     );
 
     const goatsGuide = new Project(
-        "Goats Guide",
+        "Goats Guide MVP",
         `https://goats-guide.herokuapp.com/`,
         ["A web tool and database concept developed from the needs of fans and practicing artists of extreme metal music genres. \n" +
         "Goat’s Guide is focused on helping bands and fans form local & international connections for live events, as well as event & venue discovery. \n" +
         "This is a project I am currently reworking using React and Node. This version was built using Ruby on Rails\n" +
-        "and utilizes HTML-scraping gems such as Watir and Nokogiri coupled with custom scripts to aggregate data. Deployed with Heroku."],
+        "and utilizes HTML-scraping gems such as Watir and Nokogiri coupled with custom scripts to aggregate data. Deployed with Heroku. \n" +
+        "Check out the early Invision prototype <a class='p-link' href='https://projects.invisionapp.com/share/YRQX2W587PM'>here.</a>"],
         [["./assets/goats-guide/mobile-1.png", "m1"], ["./assets/goats-guide/mobile-2.png", "m3"],  ["./assets/goats-guide/desktop-2.png", "d0"], ["./assets/goats-guide/desktop-1.png", "d2"]], //["./assets/goats-guide/mobile-3.png", "m2"],
         "https://github.com/killeraliens/goats-guide"
     );
