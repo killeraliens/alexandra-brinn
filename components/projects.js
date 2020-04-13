@@ -10,9 +10,9 @@ function generateProjectArr() {
     const projectArr = [];
 
     const goatsGuideV2 = new Project(
-      "Goat's Guide (pivot design)",
+      "Goats Guide (pivot design)",
       "https://goatsguide.com",
-      ["If you know about an upcoming concert, fest, or tour, share the flier on Goat's Guide - a DIY bulletin board for poster artwork and event information. \n" +
+      ["If you know about an upcoming concert, fest, or tour, share the flier on Goats Guide - a DIY bulletin board for poster artwork and event information. \n" +
       "This is a redesign on a passion project utilizing React (hooks!), Node.js and feedback from version1. Attention is placed on making content upload features more prominent and easy-to-use to encourage user-sourced event data. \n" +
       "Loading time is reduced with this React SPA, and I was able to create a highly customized service layer using Express and Node.js. \n" +
       "Additional features which invite more social activity are currently being built out. Custom authorizaton and protected endpoints make both the frontend and API private to the community. \n" +
