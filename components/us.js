@@ -20,13 +20,6 @@ function generateQuestionsArr() {
         [`I'd be Courier`, `false`, `#`]
     );
 
-    // const q2 = new Question(
-    //     `On marijuana`,
-    //     [`Colorado has it right`, `true`, `#`],
-    //     [`Open to working with the industry`, `true`, `#`],
-    //     [`Strictly opposed`, `false`, `#`]
-    // );
-
     const q2 = new Question(
         `Best description of your diet`,
         [`Convenient`, `false`, `#`],
