@@ -13,8 +13,8 @@ function generateProjectArr() {
     "UX design and fullstack developer for Cartel Coffee Lab",
     "https://cartelcoffeelab.com",
     [`This is an ongoing role on a proprietary line of products.
-    Technologies I am working with include Postgres relational database structure (with JSON aggregate fns), NodeJS API service layer,
-    Stripe payment integration, JWT authorization, end-to-end service architecture, AWS server configuration and deployment,
+    Technologies/skills I am working with include code documentation/versioning management (Github), Postgres relational database structure (with JSON aggregate fns), NodeJS API service layer,
+    Stripe payment integration, JWT authorization, end-to-end service architecture and code setup, AWS server configuration and deployment,
     as well as UX strategy on various React client interfaces for customers, employees, and administration.
       Feel free to check out Cartel as a company, and
       <a class='p-link' href='https://ccl-blk.now.sh/' target="_blank" >this early pdf click mock.</a>`],
