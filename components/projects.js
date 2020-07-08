@@ -9,14 +9,27 @@ function Project(title, siteUrl, paragraphArr, imgUrlArr, ghUrl) {
 function generateProjectArr() {
     const projectArr = [];
 
+  const cclApp = new Project(
+    "UX design and fullstack developer for Cartel Coffee Lab",
+    "https://cartelcoffeelab.com",
+    [`This is an ongoing role on a proprietary line of products.
+    Technologies I am working with include Postgres relational database structure (with JSON aggregate fns), NodeJS API service layer,
+    Stripe payment integration, JWT authorization, end-to-end service architecture, AWS server configuration and deployment,
+    as well as UX strategy on various React client interfaces for customers, employees, and administration.
+      Feel free to check out Cartel as a company, and
+      <a class='p-link' href='https://ccl-blk.now.sh/' target="_blank" >this early pdf click mock.</a>`],
+    [["./assets/ccl-app/desktop-1.png", "d2"], ["./assets/ccl-app/desktop-2.png", "d0"]],
+    ""
+  );
+
     const goatsGuideV2 = new Project(
-      "Goats Guide (pivot design)",
-      "https://goatsguide.com",
-      ["If you know about an upcoming concert, fest, or tour, share the flier on GOATSGUIDE - a CMS and bulletin board for poster artwork and event information. \n" +
+      "Unholygrail (Goats Guide pivot design)",
+      "https://unholygrail.org",
+      ["If you know about an upcoming concert, fest, or tour, share the flier on UNHOLYGRAIL - a CMS and bulletin board for poster artwork and event information. \n" +
       "This is a redesign on a passion project utilizing React (hooks), Node.js and feedback from version1. Attention is placed on making content upload features more prominent and easy-to-use to encourage user-sourced event data. \n" +
       "Loading time is reduced with this React SPA, and a service layer was created with Express and Node. \n" +
       "Additional features are currently being integrated. Custom authorizaton and protected endpoints make both the frontend and API private to the community. \n" +
-      "Server-side tests written in Mocha, Chai, Supertest. React testing in progress with Enzyme. Demo account login details can be found <a class='p-link' href='https://github.com/killeraliens/goats-client'>here</a>."],
+      "Server-side tests written in Mocha, Chai, Supertest. React testing in progress with Jest and Enzyme. Demo account login details can be found <a class='p-link' href='https://github.com/killeraliens/goats-client'>here</a>."],
       [["./assets/goats-guide-v2/mobile-1.png", "m1"], ["./assets/goats-guide-v2/mobile-2.png", "m2"], ["./assets/goats-guide-v2/desktop-1.png", "d1"], ["./assets/goats-guide-v2/mobile-3.png", "m3"]],
       "https://github.com/killeraliens/goats-client"
     );
@@ -70,7 +83,7 @@ function generateProjectArr() {
     );
 
 
-    projectArr.push(goatsGuideV2, doctorsNearMe, cryptidsQuiz, fleshMe, goatsGuide, excuseEngine);
+    projectArr.push(cclApp, goatsGuideV2, doctorsNearMe, cryptidsQuiz, fleshMe, goatsGuide, excuseEngine);
     return projectArr;
 }
 
@@ -101,7 +114,9 @@ function returnArticleString(project) {
         <h2>${project.title}</h2>
         <a href="${project.siteUrl}" target="_blank" aria-label="link to the ${project.title} site">${regexedSiteUrl(project.siteUrl)}</a>
         ${returnParagraphsString(project)}
-        <a href="${project.ghUrl}" target="_blank" aria-label="link to the github repo"><i class="fab fa-github"></i>See the code</a>
+        ${!!project.ghUrl
+          ? `<a href=${project.ghUrl} target="_blank" aria-label="link to the github repo"><i class="fab fa-github"></i>See the code</a>`
+          : `<a href="https://github.com/killeraliens" target="_blank" aria-label="link to killeraliens github"><i class="fab fa-github"></i>Repo Code Unavailable</a>`}
       </article>`;
 }
 
