@@ -56,6 +56,9 @@ h1, h2, legend {
   /*text-decoration: underline;*/
 }
 
+.centered-text {
+  text-align: center;
+}
 
 a {
   font-weight: bold;
