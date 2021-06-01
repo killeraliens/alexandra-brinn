@@ -53,7 +53,7 @@ function returnContactSectionHtml() {
          <header class="section-header"><h1 class="section-title">Contact</h1></header>
           <ul class="contact-list">
              <li><i class="fas fa-envelope"></i><br><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">AlexandraBrinnCampbell@gmail.com</a></li>
-             <li><i class="fab fa-github"></i>github user <br><a href="https://github.com/killeraliens" target="_blank">killeraliens</a></li>
+             <li><i class="fab fa-github"></i>github user <br><a href="https://alexandrabrinn.com" target="_blank">killeraliens</a></li>
              <li><i class="fab fa-linkedin"></i>LinkedIn profile <br><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">Alexandra Campbell</a></li>
           </ul>
           <form id="js-contact-form" class="contact-form" action="https://formspree.io/alexandrabrinncampbell@gmail.com" method="POST" >
