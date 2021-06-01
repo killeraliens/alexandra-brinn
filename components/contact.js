@@ -56,7 +56,7 @@ function returnContactSectionHtml() {
              <li><i class="fab fa-github"></i>github user <br><a href="https://alexandrabrinn.com" target="_blank">killeraliens</a></li>
              <li><i class="fab fa-linkedin"></i>LinkedIn profile <br><a href="https://www.linkedin.com/in/alexandra-brinn-campbell/" target="_blank">Alexandra Campbell</a></li>
           </ul>
-          <form id="js-contact-form" class="contact-form" action="https://formspree.io/f/alexandrabrinncampbell@gmail.com" method="POST" >
+          <form id="js-contact-form" class="contact-form" action="https://formspree.io/f/xleabplj" method="POST" >
             <legend>Send me a message</legend>
             <fieldset name="contact-info">
                 <div class="flex-fields">
